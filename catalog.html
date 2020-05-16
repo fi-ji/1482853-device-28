@@ -15,8 +15,10 @@
         <img src="https://via.placeholder.com/150x100" alt="Логотип «Девайс»">
       </a>
 
-      <label>Поиск <input type="search" name="search" id="search-field" placeholder="Поиск по сайту"></label>
-      <button>Найти</button>
+      <form action="#" method="POST">
+        <label>Поиск <input type="search" name="search" placeholder="Поиск по сайту"></label>
+        <button>Найти</button>
+      </form>
 
       <ul>
         <li><a href="">Валентин Петухов</a></li>
@@ -50,7 +52,23 @@
 
     <section>
       <h2>Фильтр:</h2>
+
       <!-- Здесь будет форма фильтра -->
+    </section>
+
+    <section>
+      <h2>Сортировка:</h2>
+
+      <ul>
+        <li><button type="button">По цене</button></li>
+        <li><button type="button">По типу</button></li>
+        <li><button type="button">По популярности</button></li>
+      </ul>
+
+      <ul>
+        <li><button type="button">стрелка вверх</button></li>
+        <li><button type="button">стрелка вниз</button></li>
+      </ul>
     </section>
 
     <section>
@@ -85,6 +103,15 @@
           <p>4 900 руб.</p>
         </li>
       </ul>
+
+      <!-- button или ссылка -->
+      <ul>
+        <li><a>Назад</a></li>
+        <li><a>1</a></li>
+        <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+        <li><a href="">Вперед</a></li>
+      </ul>
     </section>
   </main>
 
@@ -93,7 +120,11 @@
       <img src="https://via.placeholder.com/150x100" alt="Логотип «Девайс»">
     </a>
 
-    <a href="">Войти</a>
+    <ul>
+      <li><a href="">Валентин Петухов</a></li>
+      <li><a href="">Выйти</a></li>
+    </ul>
+
     <a href="">Сравнить</a>
     <a href="">Корзина</a>
 
