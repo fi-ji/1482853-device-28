@@ -9,30 +9,32 @@
 <body class="page">
 
   <header class="page-header">
-    <div class="header-logo-wrapper">
-      <img src="https://via.placeholder.com/150x100" alt="Логотип «Девайс»">
+    <div class="header-logo__wrapper">
+      <img src="img/logo-device.svg" width="163" height="35" alt="Логотип «Девайс»">
     </div>
 
     <div class="header-top">
-      <form class="header_search-form" action="#" method="GET">
+      <form class="header-search-form" action="#" method="GET">
         <label for="search-field">Поиск</label>
         <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
         <button type="submit">Найти</button>
       </form>
 
-      <div class="header-user-act">
-        <ul class="header-login-user-act">
+      <div class="header-user-menu">
+        <ul class="header-user-auth">
           <li><a class="header-login" href="">Войти</a></li>
         </ul>
 
-        <a href="">Сравнить</a>
-        <a href="">Корзина</a>
+        <ul class="header-user-act">
+          <li><a class="header-compare" href="">Сравнить</a></li>
+          <li><a class="header-cart" href="">Корзина</a></li>
+        </ul>
       </div>
     </div>
 
     <nav class="header-nav">
       <ul class="header-nav-list">
-        <li>Каталог товаров <span>+</span>
+        <li>Каталог товаров
           <ul>
             <li><a href="catalog.html">Моноподы для селфи</a></li>
           </ul>
@@ -51,15 +53,17 @@
       <h2>Топ-3 гаджета</h2>
 
       <div class="slider-controls">
-        <button type="button">Первый слайд</button>
-        <button type="button">Второй слайд</button>
-        <button type="button">Третий слайд</button>
+        <ul>
+          <li><button type="button">Первый слайд</button></li>
+          <li><button type="button">Второй слайд</button></li>
+          <li><button type="button">Третий слайд</button></li>
+        </ul>
       </div>
 
       <ol class="slider-list">
         <li class="slider-item">
           <div class="slider-img-wrapper">
-            <img src="https://via.placeholder.com/150x100" alt="Монопод для селфи">
+            <img src="img/slider-1.png" width="384" height="486" alt="Монопод для селфи">
           </div>
 
           <div class="slider-content-wrapper">
@@ -80,6 +84,46 @@
             </dl>
           </div>
         </li>
+        <li class="slider-item">
+          <div class="slider-img-wrapper">
+            <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
+          </div>
+
+          <div class=" slider-content-wrapper">
+            <p>Худеем правильно!</p>
+
+            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
+              не пропускать занятия и соблюдать диету.</p>
+
+            <a href="">Подробнее</a>
+
+            <dl>
+              <dt>Без подзарядки</dt>
+              <dd>48 часов</dd>
+            </dl>
+          </div>
+        </li>
+        <li class="slider-item">
+          <div class="slider-img-wrapper">
+            <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
+          </div>
+
+          <div class=" slider-content-wrapper">
+            <p>Порхает как бабочка, жалит как пчела!</p>
+
+            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
+              мощным лазером, замаскированным под стандартную камеру.</p>
+
+            <a href="">Подробнее</a>
+
+            <dl>
+              <dt>Дальность полета</dt>
+              <dd>800 м</dd>
+              <dt>Радиус поражения</dt>
+              <dd>50 м</dd>
+            </dl>
+          </div>
+        </li>
       </ol>
     </section>
 
@@ -90,7 +134,7 @@
         <li>
           <a href="">
             <div class="pop-section-img-wrapper">
-              <img src="https://via.placeholder.com/150x100" alt="Виртуальная реальность">
+              <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
             </div>
             <h3>Виртуальная реальность</h3>
           </a>
@@ -98,7 +142,7 @@
         <li>
           <a href="catalog.html">
             <div class="pop-section-img-wrapper">
-              <img src="https://via.placeholder.com/150x100" alt="Моноподы для селфи">
+              <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
             </div>
             <h3>Моноподы для селфи</h3>
           </a>
@@ -106,7 +150,7 @@
         <li>
           <a href="">
             <div class="pop-section-img-wrapper">
-              <img src="https://via.placeholder.com/150x100" alt="Экшн-камеры">
+              <img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
             </div>
             <h3>Экшн-камеры</h3>
           </a>
@@ -114,7 +158,7 @@
         <li>
           <a href="">
             <div class="pop-section-img-wrapper">
-              <img src="https://via.placeholder.com/150x100" alt="Фитнес-браслеты">
+              <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
             </div>
             <h3>Фитнес-браслеты</h3>
           </a>
@@ -122,7 +166,7 @@
         <li>
           <a href="">
             <div class="pop-section-img-wrapper">
-              <img src="https://via.placeholder.com/150x100" alt="Умные часы">
+              <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
             </div>
             <h3>Умные часы</h3>
           </a>
@@ -130,7 +174,7 @@
         <li>
           <a href="">
             <div class="pop-section-img-wrapper">
-              <img src="https://via.placeholder.com/150x100" alt="Квадрокоптеры">
+              <img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
             </div>
             <h3>Квадрокоптеры</h3>
           </a>
@@ -145,7 +189,7 @@
         <ul>
           <li><button type="button">Доставка</button></li>
           <li><button type="button">Гарантия</button></li>
-          <li><button type="button">Гарантия</button></li>
+          <li><button type="button">Кредит</button></li>
         </ul>
       </div>
 
@@ -172,25 +216,26 @@
 
     <section class="pop-brands">
       <h2>Популярные бренды</h2>
+
       <ul class="pop-brands-list">
         <li class="pop-brands-item">
           <a href="">
-            <img src="https://via.placeholder.com/150x100" alt="DJI">
+            <img src="img/brand-1.png" width="260" height="100" alt="DJI">
           </a>
         </li>
         <li class="pop-brands-item">
           <a href="">
-            <img src="https://via.placeholder.com/150x100" alt="SP Gadjets">
+            <img src="img/brand-2.png" width="260" height="100" alt="SP Gadjets">
           </a>
         </li>
         <li class="pop-brands-item">
           <a href="">
-            <img src="https://via.placeholder.com/150x100" alt="GoPro">
+            <img src="img/brand-3.png" width="260" height="100" alt="GoPro">
           </a>
         </li>
         <li class="pop-brands-item">
           <a href="">
-            <img src="https://via.placeholder.com/150x100" alt="VIVE">
+            <img src="img/brand-4.png" width="260" height="100" alt="VIVE">
           </a>
         </li>
       </ul>
@@ -199,6 +244,7 @@
     <div class="about-contacts-wrapper">
       <section class="about">
         <h2>О нас</h2>
+
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки
           России! DEVICE работает со многими транспортными компаниями:</p>
@@ -212,10 +258,11 @@
 
       <section class="contacts">
         <h2>Контакты</h2>
+
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.</p>
         <button type="button" class="map-button">
-          <img src="https://via.placeholder.com/150x100" alt="ул. Строителей, 15">
+          <img src="img/map.png" width="560" height="222" alt="ул. Строителей, 15">
         </button>
         <a href="">Напишите нам</a>
       </section>
@@ -226,16 +273,18 @@
 
     <div class="footer-top">
       <div class="footer-logo-wrapper">
-        <img src="https://via.placeholder.com/150x100" alt="Логотип «Девайс»">
+        <img src="img/logo-device-yellow.svg" width="163" height="35" alt="Логотип «Девайс»">
       </div>
 
-      <div class="footer-user-act">
-        <ul class="footer-login-user-act">
+      <div class="footer-user-menu">
+        <ul class="footer-user-auth">
           <li><a class="footer-login" href="">Войти</a></li>
         </ul>
 
-        <a href="">Сравнить</a>
-        <a href="">Корзина</a>
+        <ul class="footer-user-act">
+          <li><a class="footer-compare" href="">Сравнить</a></li>
+          <li><a class="footer-cart" href="">Корзина</a></li>
+        </ul>
       </div>
     </div>
 
@@ -265,7 +314,7 @@
       </ul>
 
       <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-        Разработано HTML Academy
+        <img src="img/logo-html.svg" width="27" height="34" alt="Разработано HTML Academy">
       </a>
     </div>
   </footer>

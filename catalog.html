@@ -10,30 +10,32 @@
 
   <header class="page-header">
     <a class="header-logo-wrapper" href="index.html">
-      <img src="https://via.placeholder.com/150x100" alt="Логотип «Девайс»">
+      <img src="img/logo-device.svg" width="163" height="35" alt="Логотип «Девайс»">
     </a>
 
     <div class="header-top">
-      <form class="header_search-form" action="#" method="GET">
+      <form class="header-search-form" action="#" method="GET">
         <label for="search-field">Поиск</label>
         <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
         <button type="submit">Найти</button>
       </form>
 
-      <div class="header-user-act">
-        <ul class="header-login-user-act">
+      <div class="header-user-menu">
+        <ul class="header-user-auth">
           <li><a class="header-login" href="">Валентин Петухов</a></li>
           <li><a class="header-exit" href="">Выйти</a></li>
         </ul>
 
-        <a href="">Сравнить</a>
-        <a href="">Корзина</a>
+        <ul class="header-user-act">
+          <li><a class="header-compare" href="">Сравнить</a></li>
+          <li><a class="header-cart" href="">Корзина</a></li>
+        </ul>
       </div>
     </div>
 
     <nav class="header-nav">
       <ul class="header-nav-list">
-        <li>Каталог товаров <span>+</span>
+        <li>Каталог товаров
           <ul>
             <li>Моноподы для селфи</li>
           </ul>
@@ -54,13 +56,14 @@
       <li><a>Моноподы для селфи</a></li>
     </ul>
 
-    <section class="products-filter">
-      <h2>Фильтр:</h2>
-      <!-- Здесь будет форма фильтра -->
-    </section>
-
     <section class="products">
       <h2>Список товаров</h2>
+
+      <div class="products-filter">
+        <p>Фильтр:</p>
+
+        <!-- Здесь будет форма фильтра -->
+      </div>
 
       <div class="products-sort">
         <p>Сортировка:</p>
@@ -78,52 +81,54 @@
       </div>
 
       <div class="products-display">
-        <ul class="products-list">
-          <li>
-            <div class="product-img-wrapper">
-              <img src="https://via.placeholder.com/150x100" alt="Любительская селфи-палка">
-            </div>
-            <div class="product-txt-wrapper">
-              <a href="">
-                <h3>Любительская селфи-палка</h3>
-              </a>
-              <p>500 руб.</p>
-            </div>
-          </li>
-          <li>
-            <div class="product-img-wrapper">
-              <img src="https://via.placeholder.com/150x100" alt="Профессиональная селфи-палка">
-            </div>
-            <div class="product-txt-wrapper">
-              <a href="">
-                <h3>Профессиональная селфи-палка</h3>
-              </a>
-              <p>1 500 руб.</p>
-            </div>
-          </li>
-          <li>
-            <div class="product-img-wrapper">
-              <img src="https://via.placeholder.com/150x100" alt="Непотопляемая селфи-палка">
-            </div>
-            <div class="product-txt-wrapper">
-              <a href="">
-                <h3>Непотопляемая селфи-палка</h3>
-              </a>
-              <p>2 500 руб.</p>
-            </div>
-          </li>
-          <li>
-            <div class="product-img-wrapper">
-              <img src="https://via.placeholder.com/150x100" alt="Селфи-палка «Следуй за мной»">
-            </div>
-            <div class="product-txt-wrapper">
-              <a href="">
-                <h3>Селфи-палка «Следуй за мной»</h3>
-              </a>
-              <p>4 900 руб.</p>
-            </div>
-          </li>
-        </ul>
+
+        <article class="products-item">
+          <div class="product-img-wrapper">
+            <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+          </div>
+          <div class="product-txt-wrapper">
+            <a href="">
+              <h3>Любительская селфи-палка</h3>
+            </a>
+            <p>500 руб.</p>
+          </div>
+        </article>
+
+        <article class="products-item">
+          <div class="product-img-wrapper">
+            <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+          </div>
+          <div class="product-txt-wrapper">
+            <a href="">
+              <h3>Профессиональная селфи-палка</h3>
+            </a>
+            <p>1 500 руб.</p>
+          </div>
+        </article>
+
+        <article class="products-item">
+          <div class="product-img-wrapper">
+            <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+          </div>
+          <div class="product-txt-wrapper">
+            <a href="">
+              <h3>Непотопляемая селфи-палка</h3>
+            </a>
+            <p>2 500 руб.</p>
+          </div>
+        </article>
+
+        <article class="products-item">
+          <div class="product-img-wrapper">
+            <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+          </div>
+          <div class="product-txt-wrapper">
+            <a href="">
+              <h3>Селфи-палка «Следуй за мной»</h3>
+            </a>
+            <p>4 900 руб.</p>
+          </div>
+        </article>
       </div>
 
       <div class="products-pagination">
@@ -143,17 +148,19 @@
   <footer class="page-footer">
     <div class="footer-top">
       <a href="index.html" class="footer-logo-wrapper">
-        <img src="https://via.placeholder.com/150x100" alt="Логотип «Девайс»">
+        <img src="img/logo-device-yellow.svg" width="163" height="35" alt="Логотип «Девайс»">
       </a>
 
-      <div class="footer-user-act">
-        <ul class="footer-login-user-act">
+      <div class="footer-user-menu">
+        <ul class="footer-user-auth">
           <li><a class="footer-login" href="">Валентин Петухов</a></li>
           <li><a class="footer-exit" href="">Выйти</a></li>
         </ul>
 
-        <a href="">Сравнить</a>
-        <a href="">Корзина</a>
+        <ul class="footer-user-act">
+          <li><a class="footer-compare" href="">Сравнить</a></li>
+          <li><a class="footer-cart" href="">Корзина</a></li>
+        </ul>
       </div>
     </div>
 
@@ -183,7 +190,7 @@
       </ul>
 
       <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-        Разработано HTML Academy
+        <img src="img/logo-html.svg" width="27" height="34" alt="Разработано HTML Academy">
       </a>
     </div>
   </footer>
