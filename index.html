@@ -21,20 +21,21 @@
       </form>
 
       <div class="header-top__menu">
-        <ul class="header-top__list">
-          <li class="header-top__item"><a class="login" href="">Войти</a></li>
+        <ul class="header-top__list" role="menu">
+          <li class="header-top__item"><a class="login" href="" aria-label="Войти в свой аккаунт"
+              role="menuitem">Войти</a></li>
         </ul>
 
-        <ul class="header-top__list">
-          <li class="header-top__item"><a class="compare" href="">Сравнить</a></li>
-          <li class="header-top__item"><a class="cart" href="">Корзина</a></li>
+        <ul class="header-top__list" role="menu">
+          <li class="header-top__item"><a class="compare" href="" role="menuitem">Сравнить</a></li>
+          <li class="header-top__item"><a class="cart" href="" role="menuitem">Корзина</a></li>
         </ul>
       </div>
     </div>
 
     <nav class="nav">
       <ul class="nav__list" aria-label="Навигация по сайту" role="menubar">
-        <li class="nav__item dropdown"><a href aria-haspopup="true" aria-expanded="false" role="menuitem">Каталог
+        <li class="nav__item dropdown"><a aria-haspopup="true" aria-expanded="false" role="menuitem">Каталог
             товаров</a>
           <ul class="dropdown__list" role="menu">
             <li class="dropdown__item"><a href="" role="menuitem">Виртуальная реальность</a></li>
@@ -56,7 +57,7 @@
     </nav>
   </header>
 
-  <main class="page-content">
+  <main class="page-content" role="main">
     <h1 class="visually-hidden">Интернет-магазин гаджетов "Device"</h1>
 
     <section class="slider">
@@ -209,9 +210,9 @@
 
       <div class="services__container">
         <ul class="services__controls">
-          <li><button class="services__controls-btn" type="button">Доставка</button></li>
-          <li><button class="services__controls-btn" type="button">Гарантия</button></li>
-          <li><button class="services__controls-btn" type="button">Кредит</button></li>
+          <li><button class="services__controls-btn" type="button" aria-label="О доставке">Доставка</button></li>
+          <li><button class="services__controls-btn" type="button" aria-label="О гарантии">Гарантия</button></li>
+          <li><button class="services__controls-btn" type="button" aria-label="О кредите">Кредит</button></li>
         </ul>
 
         <div class="services__wrapper">
