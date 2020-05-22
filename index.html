@@ -14,21 +14,20 @@
     </div>
 
     <div class="header-top">
-      <form class="search" action="https://echo.htmlacademy.ru/" method="GET">
-        <label class="search__label visually-hidden" for="search-field">Поиск по сайту</label>
+      <form class="search" role="search" action="https://echo.htmlacademy.ru/" method="GET">
+        <label class="search__label visually-hidden" for="search-field">Поиск</label>
         <input class="search__input" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
         <button class="search__btn" type="submit">Найти</button>
       </form>
 
       <div class="header-top__menu">
-        <ul class="header-top__list" role="menu">
-          <li class="header-top__item"><a class="login" href="" aria-label="Войти в свой аккаунт"
-              role="menuitem">Войти</a></li>
+        <ul class="header-top__list" aria-label="Аккаунт">
+          <li class="header-top__item"><a class="login" href="" aria-label="Войти в свой аккаунт">Войти</a></li>
         </ul>
 
-        <ul class="header-top__list" role="menu">
-          <li class="header-top__item"><a class="compare" href="" role="menuitem">Сравнить</a></li>
-          <li class="header-top__item"><a class="cart" href="" role="menuitem">Корзина</a></li>
+        <ul class="header-top__list">
+          <li class="header-top__item"><a class="compare" href="">Сравнить</a></li>
+          <li class="header-top__item"><a class="cart" href="">Корзина</a></li>
         </ul>
       </div>
     </div>
@@ -37,16 +36,16 @@
       <ul class="nav__list" aria-label="Навигация по сайту" role="menubar">
         <li class="nav__item dropdown"><a aria-haspopup="true" aria-expanded="false" role="menuitem">Каталог
             товаров</a>
-          <ul class="dropdown__list" role="menu">
+          <ul class="dropdown__list">
             <li class="dropdown__item"><a href="" role="menuitem">Виртуальная реальность</a></li>
             <li class="dropdown__item"><a href="catalog.html" role="menuitem">Моноподы для селфи</a></li>
             <li class="dropdown__item"><a href="" role="menuitem">Экшн-камеры</a></li>
           </ul>
-          <ul class="dropdown__list" role="menu">
+          <ul class="dropdown__list">
             <li class="dropdown__item"><a href="" role="menuitem">Фитнес-браслеты</a></li>
             <li class="dropdown__item"><a href="" role="menuitem">Умные часы</a></li>
           </ul>
-          <ul class="dropdown__list" role="menu">
+          <ul class="dropdown__list">
             <li class="dropdown__item"><a href="" role="menuitem">Квадрокоптер</a></li>
           </ul>
         </li>
@@ -57,7 +56,7 @@
     </nav>
   </header>
 
-  <main class="page-content" role="main">
+  <main class="page-content">
     <h1 class="visually-hidden">Интернет-магазин гаджетов "Device"</h1>
 
     <section class="slider">
@@ -299,8 +298,8 @@
       </div>
 
       <div class="footer-top__menu">
-        <ul class="footer-top__list">
-          <li class="footer-top__item"><a class="login" href="">Войти</a></li>
+        <ul class="footer-top__list" aria-label="Аккаунт">
+          <li class="footer-top__item"><a class="login" href="" aria-label="Войти в свой аккаунт">Войти</a></li>
         </ul>
 
         <ul class="footer-top__menu">
@@ -323,15 +322,15 @@
     </div>
 
     <div class="footer-bottom">
-      <ul class="social">
+      <ul class="social" aria-label="Магазин «Девайс» в соц.сетях">
         <li class="social__item facebook">
-          <a href="" target="_blank" aria-label="В магазин 'Device' в Facebook">Фейсбук</a>
+          <a href="" target="_blank" aria-label="в Facebook">Фейсбук</a>
         </li>
         <li class="social__item instagram">
-          <a href="" target="_blank" aria-label="В магазин 'Device' в Instagram">Инстаграм</a>
+          <a href="" target="_blank" aria-label="в Instagram">Инстаграм</a>
         </li>
         <li class="social__item twitter">
-          <a href="" target="_blank" aria-label="В магазин 'Device' в Twitter">Твиттер</a>
+          <a href="" target="_blank" aria-label="в Twitter">Твиттер</a>
         </li>
       </ul>
 

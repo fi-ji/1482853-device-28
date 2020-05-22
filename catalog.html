@@ -14,21 +14,22 @@
     </a>
 
     <div class="header-top">
-      <form class="search" action="https://echo.htmlacademy.ru/" method="GET">
-        <label class="search__label visually-hidden" for="search-field">Поиск по сайту</label>
+      <form class="search" role="search" action="https://echo.htmlacademy.ru/" method="GET">
+        <label class="search__label visually-hidden" for="search-field">Поиск</label>
         <input class="search__input" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
         <button class="search__btn" type="submit">Найти</button>
       </form>
 
       <div class="header-top__menu">
-        <ul class="header-top__list" role="menu">
-          <li class="header-top__item"><a class="login" href="" role="menuitem">Валентин Петухов</a></li>
-          <li class="header-top__item"><a class="exit" href="" role="menuitem">Выйти</a></li>
+        <ul class="header-top__list" aria-label="Аккаунт">
+          <li class="header-top__item"><a class="login" href="" aria-label="На страницу аккаунта">Валентин Петухов</a>
+          </li>
+          <li class="header-top__item"><a class="exit" href="" aria-label="Выйти из аккаунта">Выйти</a></li>
         </ul>
 
-        <ul class="header-top__list" role="menu">
-          <li class="header-top__item"><a class="compare" href="" role="menuitem">Сравнить</a></li>
-          <li class="header-top__item"><a class="cart" href="" role="menuitem">Корзина</a></li>
+        <ul class="header-top__list">
+          <li class="header-top__item"><a class="compare" href="">Сравнить</a></li>
+          <li class="header-top__item"><a class="cart" href="">Корзина</a></li>
         </ul>
       </div>
     </div>
@@ -36,18 +37,17 @@
     <nav class="nav">
       <ul class="nav__list" aria-label="Навигация по сайту" role="menubar">
         <li class="nav__item dropdown" id="catalog"><a aria-haspopup="true" aria-expanded="false"
-            role="menuitem">Каталог
-            товаров</a>
-          <ul class="dropdown__list" role="menu">
+            role="menuitem">Каталог товаров</a>
+          <ul class="dropdown__list">
             <li class="dropdown__item"><a href="" role="menuitem">Виртуальная реальность</a></li>
             <li class="dropdown__item"><a role="menuitem" aria-current="page">Моноподы для селфи</a></li>
             <li class="dropdown__item"><a href="" role="menuitem">Экшн-камеры</a></li>
           </ul>
-          <ul class="dropdown__list" role="menu">
+          <ul class="dropdown__list">
             <li class="dropdown__item"><a href="" role="menuitem">Фитнес-браслеты</a></li>
             <li class="dropdown__item"><a href="" role="menuitem">Умные часы</a></li>
           </ul>
-          <ul class="dropdown__list" role="menu">
+          <ul class="dropdown__list">
             <li class="dropdown__item"><a href="" role="menuitem">Квадрокоптер</a></li>
           </ul>
         </li>
@@ -58,7 +58,7 @@
     </nav>
   </header>
 
-  <main class="page-content" role="main">
+  <main class="page-content">
     <h1>Моноподы для селфи</h1>
 
     <ul class="breadcrumbs" aria-label="Хлебные крошки">
@@ -166,7 +166,7 @@
         <ul class="products__list">
           <li class="products__item">
             <div class="products__img-wrapper">
-              <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+              <img src="img/item-1.jpg" width="360" height="380" alt="">
             </div>
             <div class="products__txt-wrapper">
               <a class="products__link" href="">
@@ -182,7 +182,7 @@
 
           <li class="products__item">
             <div class="products__img-wrapper">
-              <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+              <img src="img/item-2.jpg" width="360" height="380" alt="">
             </div>
             <div class="products__txt-wrapper">
               <a class="products__link" href="">
@@ -198,7 +198,7 @@
 
           <li class="products__item">
             <div class="products__img-wrapper">
-              <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+              <img src="img/item-3.jpg" width="360" height="380" alt="">
             </div>
             <div class="products__txt-wrapper">
               <a class="products__link" href="">
@@ -214,7 +214,7 @@
 
           <li class="products__item">
             <div class="products__img-wrapper">
-              <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+              <img src="img/item-4.jpg" width="360" height="380" alt="">
             </div>
             <div class="products__txt-wrapper">
               <a class="products__link" href="">
@@ -229,7 +229,7 @@
           </li>
         </ul>
 
-        <div class="pagination" aria-label="Страницы сайта">
+        <div class="pagination" aria-label="Страницы">
           <a class="pagination__prev" aria-disabled="true">Назад</a>
 
           <ul class="pagination__list">
@@ -252,9 +252,10 @@
       </a>
 
       <div class="footer-top__menu">
-        <ul class="footer-top__list">
-          <li class="footer-top__item"><a class="login" href="">Валентин Петухов</a></li>
-          <li class="footer-top__item"><a class="exit" href="" aria-label="Выйти из своего аккаунта">Выйти</a></li>
+        <ul class="footer-top__list" aria-label="Аккаунт">
+          <li class="footer-top__item"><a class="login" href="" aria-label="На страницу аккаунта">Валентин Петухов</a>
+          </li>
+          <li class="footer-top__item"><a class="exit" href="" aria-label="Выйти из аккаунта">Выйти</a></li>
         </ul>
 
         <ul class="footer-top__list">
@@ -277,15 +278,15 @@
     </div>
 
     <div class="footer-bottom">
-      <ul class="social">
+      <ul class="social" aria-label="Магазин «Девайс» в соц.сетях">
         <li class="social__item facebook">
-          <a href="" target="_blank" aria-label="В магазин 'Device' в Facebook">Фейсбук</a>
+          <a href="" target="_blank" aria-label="в Facebook">Фейсбук</a>
         </li>
         <li class="social__item instagram">
-          <a href="" target="_blank" aria-label="В магазин 'Device' в Instagram">Инстаграм</a>
+          <a href="" target="_blank" aria-label="в Instagram">Инстаграм</a>
         </li>
         <li class="social__item twitter">
-          <a href="" target="_blank" aria-label="В магазин 'Device' в Twitter">Твиттер</a>
+          <a href="" target="_blank" aria-label="в Twitter">Твиттер</a>
         </li>
       </ul>
 
