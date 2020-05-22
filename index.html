@@ -15,7 +15,7 @@
 
     <div class="header-top">
       <form class="search" action="https://echo.htmlacademy.ru/" method="GET">
-        <label class="search__label" for="search-field">Поиск</label>
+        <label class="search__label visually-hidden" for="search-field">Поиск по сайту</label>
         <input class="search__input" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
         <button class="search__btn" type="submit">Найти</button>
       </form>
@@ -33,24 +33,25 @@
     </div>
 
     <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item dropdown"><a>Каталог товаров</a>
-          <ul class="dropdown__list">
-            <li class="dropdown__item"><a href="">Виртуальная реальность</a></li>
-            <li class="dropdown__item"><a href="catalog.html">Моноподы для селфи</a></li>
-            <li class="dropdown__item"><a href="">Экшн-камеры</a></li>
+      <ul class="nav__list" aria-label="Навигация по сайту" role="menubar">
+        <li class="nav__item dropdown"><a href aria-haspopup="true" aria-expanded="false" role="menuitem">Каталог
+            товаров</a>
+          <ul class="dropdown__list" role="menu">
+            <li class="dropdown__item"><a href="" role="menuitem">Виртуальная реальность</a></li>
+            <li class="dropdown__item"><a href="catalog.html" role="menuitem">Моноподы для селфи</a></li>
+            <li class="dropdown__item"><a href="" role="menuitem">Экшн-камеры</a></li>
           </ul>
-          <ul class="dropdown__list">
-            <li class="dropdown__item"><a href="">Фитнес-браслеты</a></li>
-            <li class="dropdown__item"><a href="">Умные часы</a></li>
+          <ul class="dropdown__list" role="menu">
+            <li class="dropdown__item"><a href="" role="menuitem">Фитнес-браслеты</a></li>
+            <li class="dropdown__item"><a href="" role="menuitem">Умные часы</a></li>
           </ul>
-          <ul class="dropdown__list">
-            <li class="dropdown__item"><a href="">Квадрокоптер</a></li>
+          <ul class="dropdown__list" role="menu">
+            <li class="dropdown__item"><a href="" role="menuitem">Квадрокоптер</a></li>
           </ul>
         </li>
-        <li class="nav__item"><a href="">Доставка</a></li>
-        <li class="nav__item"><a href="">Гарантия</a></li>
-        <li class="nav__item"><a href="">Контакты</a></li>
+        <li class="nav__item"><a href="" role="menuitem">Доставка</a></li>
+        <li class="nav__item"><a href="" role="menuitem">Гарантия</a></li>
+        <li class="nav__item"><a href="" role="menuitem">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -62,9 +63,12 @@
       <h2 class="visually-hidden">Топ-3 гаджета</h2>
 
       <div class="slider__controls">
-        <button class="slider__controls-btn" type="button">Первый слайд</button>
-        <button class="slider__controls-btn" type="button">Второй слайд</button>
-        <button class="slider__controls-btn" type="button">Третий слайд</button>
+        <button class="slider__controls-btn" type="button" aria-label="Перейти на слайд о моноподе для селфи">Первый
+          слайд</button>
+        <button class="slider__controls-btn" type="button" aria-label="Перейти на слайд о фитнес-браслете">Второй
+          слайд</button>
+        <button class="slider__controls-btn" type="button" aria-label="Перейти на слайд о квадрокоптере">Третий
+          слайд</button>
       </div>
 
       <ol class="slider__list">
@@ -79,7 +83,7 @@
             <p class="slider__txt">Самая длинная палка для селфи доступна в нашем магазине.
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 
-            <a class="slider__link" href="">Подробнее</a>
+            <a class="slider__link" href="" aria-label="Подробнее о селфи-палке">Подробнее</a>
 
             <dl class="slider__list">
               <div class="slider__item">
@@ -99,7 +103,7 @@
         </li>
         <li class="slider__item">
           <div class="slider__img-wrapper">
-            <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
+            <img src="img/slider-2.png" width="345" height="483" alt="Фитнес-браслет">
           </div>
 
           <div class="slider__content-wrapper">
@@ -108,7 +112,7 @@
             <p class="slider__txt">Мотивирующие фитнес-браслеты помогут найти в себе силы
               не пропускать занятия и соблюдать диету.</p>
 
-            <a class="slider__link" href="">Подробнее</a>
+            <a class="slider__link" href="" aria-label="Подробнее о фитнес-браслетах">Подробнее</a>
 
             <!-- оставить ли два класса или создать div -->
             <dl class="slider__list slider__item">
@@ -128,7 +132,7 @@
             <p class="slider__txt">Этот обычный, на первый взгляд, квадрокоптер оснащен
               мощным лазером, замаскированным под стандартную камеру.</p>
 
-            <a class="slider__link" href="">Подробнее</a>
+            <a class="slider__link" href="" aria-label="Подробнее о квадрокоптере">Подробнее</a>
 
             <dl class="slider__list">
               <div class="slider__item">
@@ -278,10 +282,10 @@
 
         <p class="contacts__txt">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.</p>
-        <button class="contacts__btn" type="button">
+        <button class="contacts__btn" type="button" aria-haspopup="true">
           <img src="img/map.png" width="560" height="222" alt="ул. Строителей, 15">
         </button>
-        <a class="contacts__link" href="">Напишите нам</a>
+        <a class="contacts__link" href="" aria-haspopup="true">Напишите нам</a>
       </section>
     </div>
   </main>
@@ -308,10 +312,10 @@
     <div class="footer-center">
       <p class="footer-center__txt">г. Москва, ул. Строителей, 15</p>
 
-      <ul class="footer-center__list">
-        <li class="footer-center__item"><a href="">Доставка</a></li>
-        <li class="footer-center__item"><a href="">Гарантия</a></li>
-        <li class="footer-center__item"><a href="">Контакты</a></li>
+      <ul class="footer-center__list" role="menu">
+        <li class="footer-center__item"><a href="" role="menuitem">Доставка</a></li>
+        <li class="footer-center__item"><a href="" role="menuitem">Гарантия</a></li>
+        <li class="footer-center__item"><a href="" role="menuitem">Контакты</a></li>
       </ul>
 
       <p class="footer-center__tel"><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
@@ -320,13 +324,13 @@
     <div class="footer-bottom">
       <ul class="social">
         <li class="social__item facebook">
-          <a href="" target="_blank">Фейсбук</a>
+          <a href="" target="_blank" aria-label="В магазин 'Device' в Facebook">Фейсбук</a>
         </li>
         <li class="social__item instagram">
-          <a href="" target="_blank">Инстаграм</a>
+          <a href="" target="_blank" aria-label="В магазин 'Device' в Instagram">Инстаграм</a>
         </li>
         <li class="social__item twitter">
-          <a href="" target="_blank">Твиттер</a>
+          <a href="" target="_blank" aria-label="В магазин 'Device' в Twitter">Твиттер</a>
         </li>
       </ul>
 
@@ -340,7 +344,7 @@
     <h2 class="visually-hidden">Напишите нам</h2>
 
     <div class="write-us__form-wrapper">
-      <button class="write-us__btn" type="button">Закрыть</button>
+      <button class="write-us__btn" type="button" aria-label="Закрыть окно">Закрыть</button>
       <form class="write-us__form" action="https://echo.htmlacademy.ru/" method="POST">
         <div class="write-us__name-wrapper">
           <p class="write-us__name">
@@ -366,7 +370,7 @@
     <h2 class="visually-hidden">Карта</h2>
 
     <div class="map__wrapper">
-      <button class="map__btn" type="button">Закрыть</button>
+      <button class="map__btn" type="button" aria-label="Закрыть окно">Закрыть</button>
 
       <div class="map__img-wrapper">
         <img src="img/map-big.png" width="994" height="593" alt="г. Москва, ул. Строителей, 15">
