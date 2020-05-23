@@ -34,26 +34,25 @@
       </div>
     </div>
 
-    <nav class="nav">
-      <ul class="nav__list" aria-label="Навигация по сайту" role="menubar">
-        <li class="nav__item dropdown" id="catalog"><a aria-haspopup="true" aria-expanded="false"
-            role="menuitem">Каталог товаров</a>
+    <nav class="nav" aria-label="Навигация по сайту">
+      <ul class="nav__list">
+        <li class="nav__item dropdown" id="catalog"><a aria-haspopup="true" aria-expanded="false">Каталог товаров</a>
           <ul class="dropdown__list">
-            <li class="dropdown__item"><a href="" role="menuitem">Виртуальная реальность</a></li>
-            <li class="dropdown__item"><a role="menuitem" aria-current="page">Моноподы для селфи</a></li>
-            <li class="dropdown__item"><a href="" role="menuitem">Экшн-камеры</a></li>
+            <li class="dropdown__item"><a href="">Виртуальная реальность</a></li>
+            <li class="dropdown__item"><a aria-current="page">Моноподы для селфи</a></li>
+            <li class="dropdown__item"><a href="">Экшн-камеры</a></li>
           </ul>
           <ul class="dropdown__list">
-            <li class="dropdown__item"><a href="" role="menuitem">Фитнес-браслеты</a></li>
-            <li class="dropdown__item"><a href="" role="menuitem">Умные часы</a></li>
+            <li class="dropdown__item"><a href="">Фитнес-браслеты</a></li>
+            <li class="dropdown__item"><a href="">Умные часы</a></li>
           </ul>
           <ul class="dropdown__list">
-            <li class="dropdown__item"><a href="" role="menuitem">Квадрокоптер</a></li>
+            <li class="dropdown__item"><a href="">Квадрокоптер</a></li>
           </ul>
         </li>
-        <li class="nav__item"><a href="" role="menuitem">Доставка</a></li>
-        <li class="nav__item"><a href="" role="menuitem">Гарантия</a></li>
-        <li class="nav__item"><a href="" role="menuitem">Контакты</a></li>
+        <li class="nav__item"><a href="">Доставка</a></li>
+        <li class="nav__item"><a href="">Гарантия</a></li>
+        <li class="nav__item"><a href="">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -61,11 +60,13 @@
   <main class="page-content">
     <h1>Моноподы для селфи</h1>
 
-    <ul class="breadcrumbs" aria-label="Хлебные крошки">
-      <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
-      <li class="breadcrumbs__item"><a href="#catalog">Каталог товаров</a></li>
-      <li class="breadcrumbs__item"><a aria-current="page">Моноподы для селфи</a></li>
-    </ul>
+    <nav aria-label="Хлебные крошки">
+      <ol class="breadcrumbs">
+        <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumbs__item"><a href="#catalog">Каталог товаров</a></li>
+        <li class="breadcrumbs__item"><a aria-current="page">Моноподы для селфи</a></li>
+      </ol>
+    </nav>
 
     <div class="products-wrapper">
       <section class="filter">
@@ -89,11 +90,11 @@
               </div>
 
               <div class="input-range__field">
-                <label class="input-range__label" for="range-from-output">от</label>
+                <label class="input-range__label" for="range-from-output" aria-label="Цены от">от</label>
                 <input class="input-range__value" type="number" name="rangeFromOutput" min="0" max="7000" value=""
                   placeholder="0" id="range-from-output" oninput="this.form.rangeFrom.value=this.value">
 
-                <label class="input-range__label" for="range-to-output">до</label>
+                <label class="input-range__label" for="range-to-output" aria-label="Цены до">до</label>
                 <input class="input-range__value" type="number" name="rangeToOutput" min="0" max="7000" value=""
                   placeholder="5000" id="range-to-output" oninput="this.form.rangeTo.value=this.value">
               </div>
@@ -166,7 +167,7 @@
         <ul class="products__list">
           <li class="products__item">
             <div class="products__img-wrapper">
-              <img src="img/item-1.jpg" width="360" height="380" alt="">
+              <img src="img/item-1.jpg" width="360" height="380" alt="" aria-hidden="true">
             </div>
             <div class="products__txt-wrapper">
               <a class="products__link" href="">
@@ -182,7 +183,7 @@
 
           <li class="products__item">
             <div class="products__img-wrapper">
-              <img src="img/item-2.jpg" width="360" height="380" alt="">
+              <img src="img/item-2.jpg" width="360" height="380" alt="" aria-hidden="true">
             </div>
             <div class="products__txt-wrapper">
               <a class="products__link" href="">
@@ -198,7 +199,7 @@
 
           <li class="products__item">
             <div class="products__img-wrapper">
-              <img src="img/item-3.jpg" width="360" height="380" alt="">
+              <img src="img/item-3.jpg" width="360" height="380" alt="" aria-hidden="true">
             </div>
             <div class="products__txt-wrapper">
               <a class="products__link" href="">
@@ -214,7 +215,7 @@
 
           <li class="products__item">
             <div class="products__img-wrapper">
-              <img src="img/item-4.jpg" width="360" height="380" alt="">
+              <img src="img/item-4.jpg" width="360" height="380" alt="" aria-hidden="true">
             </div>
             <div class="products__txt-wrapper">
               <a class="products__link" href="">
@@ -268,10 +269,10 @@
     <div class="footer-center">
       <p class="footer-center__txt">г. Москва, ул. Строителей, 15</p>
 
-      <ul class="footer-center__list" role="menu">
-        <li class="footer-center__item"><a href="" role="menuitem">Доставка</a></li>
-        <li class="footer-center__item"><a href="" role="menuitem">Гарантия</a></li>
-        <li class="footer-center__item"><a href="" role="menuitem">Контакты</a></li>
+      <ul class="footer-center__list">
+        <li class="footer-center__item"><a href="">Доставка</a></li>
+        <li class="footer-center__item"><a href="">Гарантия</a></li>
+        <li class="footer-center__item"><a href="">Контакты</a></li>
       </ul>
 
       <p class="footer-center__tel"><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
