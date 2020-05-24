@@ -21,7 +21,7 @@
       </form>
 
       <div class="header-top__menu">
-        <ul class="header-top__list" aria-label="Аккаунт">
+        <ul class="header-top__list">
           <li class="header-top__item"><a class="login" href="" aria-label="На страницу аккаунта">Валентин Петухов</a>
           </li>
           <li class="header-top__item"><a class="exit" href="" aria-label="Выйти из аккаунта">Выйти</a></li>
@@ -34,9 +34,10 @@
       </div>
     </div>
 
-    <nav class="nav" aria-label="Навигация по сайту">
+    <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__item dropdown" id="catalog"><a aria-haspopup="true" aria-expanded="false">Каталог товаров</a>
+        <li class="nav__item dropdown" id="catalog"><a role="menu" aria-haspopup="true" aria-expanded="false">Каталог
+            товаров</a>
           <ul class="dropdown__list">
             <li class="dropdown__item"><a href="">Виртуальная реальность</a></li>
             <li class="dropdown__item"><a aria-current="page">Моноподы для селфи</a></li>
@@ -60,13 +61,12 @@
   <main class="page-content">
     <h1>Моноподы для селфи</h1>
 
-    <nav aria-label="Хлебные крошки">
-      <ol class="breadcrumbs">
-        <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
-        <li class="breadcrumbs__item"><a href="#catalog">Каталог товаров</a></li>
-        <li class="breadcrumbs__item"><a aria-current="page">Моноподы для селфи</a></li>
-      </ol>
-    </nav>
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item"><a href="index.html" aria-label="На главную страницу">Главная</a></li>
+      <li class="breadcrumbs__item"><a href="#catalog" aria-label="В раздел с каталогом товаров">Каталог товаров</a>
+      </li>
+      <li class="breadcrumbs__item"><a aria-current="page">Моноподы для селфи</a></li>
+    </ul>
 
     <div class="products-wrapper">
       <section class="filter">
@@ -80,23 +80,23 @@
 
               <div class="input-range__slider-wrapper">
                 <div class="input-range__track">
-                  <div class="input-range__track--active"></div>
+                  <div class="input-range__active-track"></div>
                 </div>
 
                 <input class="input-range__slider" type="range" name="rangeFrom" step="1" min="0" max="7000" value="0"
-                  oninput="this.form.rangeFromOutput.value=this.value" aria-label="Ползунок для минимальной цены">
+                  aria-label="Ползунок для минимальной цены">
                 <input class="input-range__slider" type="range" name="rangeTo" step="1" min="0" max="7000" value="5000"
-                  oninput="this.form.rangeToOutput.value=this.value" aria-label="Ползунок для максимальной цены">
+                  aria-label="Ползунок для максимальной цены">
               </div>
 
               <div class="input-range__field">
                 <label class="input-range__label" for="range-from-output" aria-label="Цены от">от</label>
                 <input class="input-range__value" type="number" name="rangeFromOutput" min="0" max="7000" value=""
-                  placeholder="0" id="range-from-output" oninput="this.form.rangeFrom.value=this.value">
+                  placeholder="0" id="range-from-output">
 
                 <label class="input-range__label" for="range-to-output" aria-label="Цены до">до</label>
                 <input class="input-range__value" type="number" name="rangeToOutput" min="0" max="7000" value=""
-                  placeholder="5000" id="range-to-output" oninput="this.form.rangeTo.value=this.value">
+                  placeholder="5000" id="range-to-output">
               </div>
 
             </div>
@@ -149,7 +149,7 @@
       <section class="products">
         <h2 class="visually-hidden">Товары</h2>
 
-        <div class="sort">
+        <div class="products__sort-area sort">
           <p class="sort__title">Сортировка:</p>
 
           <ul class="sort__list">
@@ -167,7 +167,7 @@
         <ul class="products__list">
           <li class="products__item">
             <div class="products__img-wrapper">
-              <img src="img/item-1.jpg" width="360" height="380" alt="" aria-hidden="true">
+              <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка" aria-hidden="true">
             </div>
             <div class="products__txt-wrapper">
               <a class="products__link" href="">
@@ -183,7 +183,7 @@
 
           <li class="products__item">
             <div class="products__img-wrapper">
-              <img src="img/item-2.jpg" width="360" height="380" alt="" aria-hidden="true">
+              <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка" aria-hidden="true">
             </div>
             <div class="products__txt-wrapper">
               <a class="products__link" href="">
@@ -199,7 +199,7 @@
 
           <li class="products__item">
             <div class="products__img-wrapper">
-              <img src="img/item-3.jpg" width="360" height="380" alt="" aria-hidden="true">
+              <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка" aria-hidden="true">
             </div>
             <div class="products__txt-wrapper">
               <a class="products__link" href="">
@@ -215,7 +215,7 @@
 
           <li class="products__item">
             <div class="products__img-wrapper">
-              <img src="img/item-4.jpg" width="360" height="380" alt="" aria-hidden="true">
+              <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной" aria-hidden="true">
             </div>
             <div class="products__txt-wrapper">
               <a class="products__link" href="">
@@ -253,7 +253,7 @@
       </a>
 
       <div class="footer-top__menu">
-        <ul class="footer-top__list" aria-label="Аккаунт">
+        <ul class="footer-top__login-list">
           <li class="footer-top__item"><a class="login" href="" aria-label="На страницу аккаунта">Валентин Петухов</a>
           </li>
           <li class="footer-top__item"><a class="exit" href="" aria-label="Выйти из аккаунта">Выйти</a></li>
@@ -279,7 +279,7 @@
     </div>
 
     <div class="footer-bottom">
-      <ul class="social" aria-label="Магазин «Девайс» в соц.сетях">
+      <ul class="social">
         <li class="social__item facebook">
           <a href="" target="_blank" aria-label="в Facebook">Фейсбук</a>
         </li>
@@ -291,7 +291,7 @@
         </li>
       </ul>
 
-      <a class="footer-bottom__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+      <a class="footer-bottom__link copyright" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
         <img src="img/logo-html.svg" width="27" height="34" alt="Разработано HTML Academy">
       </a>
     </div>
