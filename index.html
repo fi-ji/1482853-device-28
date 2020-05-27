@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body class="page">
@@ -34,7 +36,7 @@
 
     <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__item dropdown"><a role="menu" aria-haspopup="true" aria-expanded="false">Каталог
+        <li class="nav__item"><a class="link dropdown" role="menu" aria-haspopup="true" aria-expanded="false">Каталог
             товаров</a>
           <ul class="dropdown__list">
             <li class="dropdown__item"><a href="">Виртуальная реальность</a></li>
@@ -49,9 +51,9 @@
             <li class="dropdown__item"><a href="">Квадрокоптер</a></li>
           </ul>
         </li>
-        <li class="nav__item"><a href="">Доставка</a></li>
-        <li class="nav__item"><a href="">Гарантия</a></li>
-        <li class="nav__item"><a href="">Контакты</a></li>
+        <li class="nav__item"><a class="link" href="">Доставка</a></li>
+        <li class="nav__item"><a class="link" href="">Гарантия</a></li>
+        <li class="nav__item"><a class="link" href="">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -83,7 +85,7 @@
             <p class="slider__txt">Самая длинная палка для селфи доступна в нашем магазине.
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 
-            <a class="slider__link" href="" aria-label="Подробнее о селфи-палке">Подробнее</a>
+            <a class="slider__link link" href="" aria-label="Подробнее о селфи-палке">Подробнее</a>
 
             <dl class="slider__specs specs">
               <div class="specs__element">
@@ -112,7 +114,7 @@
             <p class="slider__txt">Мотивирующие фитнес-браслеты помогут найти в себе силы
               не пропускать занятия и соблюдать диету.</p>
 
-            <a class="slider__link" href="" aria-label="Подробнее о фитнес-браслетах">Подробнее</a>
+            <a class="slider__link link" href="" aria-label="Подробнее о фитнес-браслетах">Подробнее</a>
 
             <dl class="slider__specs specs">
               <div class="specs__element">
@@ -133,7 +135,7 @@
             <p class="slider__txt">Этот обычный, на первый взгляд, квадрокоптер оснащен
               мощным лазером, замаскированным под стандартную камеру.</p>
 
-            <a class="slider__link" href="" aria-label="Подробнее о квадрокоптере">Подробнее</a>
+            <a class="slider__link link" href="" aria-label="Подробнее о квадрокоптере">Подробнее</a>
 
             <dl class="slider__specs specs">
               <div class="specs__element">
@@ -210,9 +212,9 @@
 
       <div class="services__container">
         <ul class="services__controls">
-          <li><button class="services__controls-btn" type="button" aria-label="О доставке">Доставка</button></li>
-          <li><button class="services__controls-btn" type="button" aria-label="О гарантии">Гарантия</button></li>
-          <li><button class="services__controls-btn" type="button" aria-label="О кредите">Кредит</button></li>
+          <li><button class="services__controls-btn link" type="button" aria-label="О доставке">Доставка</button></li>
+          <li><button class="services__controls-btn link" type="button" aria-label="О гарантии">Гарантия</button></li>
+          <li><button class="services__controls-btn link" type="button" aria-label="О кредите">Кредит</button></li>
         </ul>
 
         <div class="services__wrapper">
@@ -275,7 +277,7 @@
           <li class="about__item">Автотрейдинг</li>
           <li class="about__item">ЖелДорЭкспедиция</li>
         </ul>
-        <a class="about__link" href="">Подробнее о нас</a>
+        <a class="about__link link" href="">Подробнее о нас</a>
       </section>
 
       <section class="contacts">
@@ -286,7 +288,7 @@
         <a class="contacts__map-link" href="" aria-haspopup="true">
           <img src="img/map.png" width="560" height="222" alt="ул. Строителей, 15">
         </a>
-        <a class="contacts__link" href="" aria-haspopup="true">Напишите нам</a>
+        <a class="contacts__link link" href="" aria-haspopup="true">Напишите нам</a>
       </section>
     </div>
   </main>
@@ -314,9 +316,9 @@
       <p class="footer-center__txt">г. Москва, ул. Строителей, 15</p>
 
       <ul class="footer-center__list">
-        <li class="footer-center__item"><a href="">Доставка</a></li>
-        <li class="footer-center__item"><a href="">Гарантия</a></li>
-        <li class="footer-center__item"><a href="">Контакты</a></li>
+        <li class="footer-center__item"><a class="link" href="">Доставка</a></li>
+        <li class="footer-center__item"><a class="link" href="">Гарантия</a></li>
+        <li class="footer-center__item"><a class="link" href="">Контакты</a></li>
       </ul>
 
       <p class="footer-center__tel"><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>

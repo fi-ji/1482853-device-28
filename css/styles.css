@@ -1,0 +1,551 @@
+/* Шрифты */
+
+@font-face {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 300;
+	src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: 300;
+	src: url("../fonts/gilroylight.woff2") format("woff2"), url("../fonts/gilroylight.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: 800;
+	src: url("../fonts/gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroyextrabold.woff") format("woff");
+}
+
+/* Переменные */
+
+:root {
+	--basic-black: #000000;
+	--basic-dark: #363636;
+	--basic-grey: #464646;
+	--basic-half-grey: #7e7e7e;
+	--basic-grey-light: #e5e5e5;
+	--basic-white: #ffffff;
+
+	--special-yellow-dark: #f0c52e;
+	--special-yellow: #f7e296;
+
+	--special-green: #91c92f;
+}
+
+/* Глобальные стили */
+
+body {
+	min-width: 1200px;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: var(--basic-black);
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+/* Index.html */
+
+/* Header */
+
+.page-header {
+	background-color: var(--special-yellow);
+}
+
+.logo-wrapper[href]:hover {
+	opacity: 0.6;
+}
+
+.logo-wrapper[href]:active {
+	opacity: 0.3;
+}
+
+.search__input {
+	border: 0;
+	background-color: transparent;
+}
+
+.search__input[placeholder] {
+	opacity: 0.3;
+}
+
+.search__input[placeholder]:hover {
+	opacity: 0.6;
+}
+
+.search__input:focus[placeholder] {
+	opacity: 1;
+}
+
+.search__btn {
+	display: none;
+	background-color: transparent;
+	border: 2px solid var(--basic-black);
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.search__btn:hover {
+	background-color: var(--basic-black);
+	color: var(--basic-white);
+}
+
+.search__btn:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.header-top__list a:hover {
+	opacity: 0.6;
+}
+
+.header-top__list a:active {
+	opacity: 0.3;
+}
+
+.link {
+	font-family: "Gilroy", sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+
+.dropdown {
+	letter-spacing: 0.1em;
+}
+
+.dropdown:hover {
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.dropdown:active {
+	opacity: 0.3;
+}
+
+.dropdown__list {
+	display: none;
+}
+
+.nav__list a[href]:hover {
+	opacity: 0.6;
+}
+
+.nav__list a[href]:active {
+	opacity: 0.3;
+}
+
+/* Промо Слайдеры */
+
+.slider {
+	font-family: "Gilroy", sans-serif;
+	font-weight: 300;
+}
+
+.slider__title {
+	font-weight: 800;
+	font-size: 47px;
+	line-height: 58px;
+}
+
+.slider__txt {
+	font-family: "Open Sans", sans-serif;
+}
+
+.slider__link {
+	background-color: var(--special-yellow-dark);
+}
+
+.slider__link:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.specs {
+	letter-spacing: 0.1em;
+}
+
+.specs__key {
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.specs__value {
+	font-size: 36px;
+	line-height: 42px;
+}
+
+/* Популярные разделы */
+
+.popular {
+	font-family: "Gilroy", sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 0.05em;
+}
+
+.popular__link:active {
+	opacity: 0.3;
+}
+
+/* Сервисы */
+
+.services__controls-btn {
+	background-color: var(--special-yellow-dark);
+	border: 0;
+}
+
+.services__controls-btn:active {
+	background-color: var(--basic-black);
+	color: var(--special-yellow);
+}
+
+.title {
+	font-family: "Gilroy", sans-serif;
+	font-weight: 800;
+	font-size: 47px;
+	line-height: 58px;
+	letter-spacing: 0.2em;
+}
+
+.services__txt {
+	line-height: 28px;
+	letter-spacing: 0.1em;
+}
+
+/* Бренды */
+
+/* О нас */
+
+.about__txt {
+	line-height: 28px;
+}
+
+.about__list {
+	font-family: "Gilroy", sans-serif;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+.about__link {
+	background-color: var(--special-yellow-dark);
+}
+
+.about__link:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+/* Контакты */
+
+.contacts__txt {
+	line-height: 28px;
+}
+
+.contacts__link {
+	background-color: var(--special-yellow-dark);
+}
+
+.contacts__link:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+
+.page-footer {
+	background-color: var(--basic-dark);
+	color: var(--basic-white);
+}
+.page-footer a {
+	color: inherit;
+}
+
+.footer-top__menu a {
+	opacity: 0.7;
+}
+
+.footer-top__menu a:hover {
+	opacity: 1;
+}
+
+.footer-center__list a:hover {
+	opacity: 0.6;
+}
+
+.footer-top__menu a:active,
+.footer-center__list a:active {
+	opacity: 0.3;
+}
+
+.copyright:hover {
+	opacity: 0.6;
+}
+
+.copyright:active {
+	opacity: 0.3;
+}
+
+/* Напишите Нам - modal */
+
+.write-us {
+	display: none;
+}
+
+/* Map - pop-up */
+
+.map {
+	display: none;
+}
+
+/* Catalog.html */
+
+/* Header */
+
+.page-header .exit {
+	opacity: 0.3;
+}
+
+.page-header .exit:hover {
+	opacity: 0.7;
+}
+
+.page-header .exit:active {
+	opacity: 1;
+}
+
+/* Page Content */
+
+.page-title {
+	font-family: "Gilroy", sans-serif;
+	font-weight: 800;
+	font-size: 47px;
+	line-height: 58px;
+}
+
+.breadcrumbs {
+	font-size: 14px;
+	line-height: 19px;
+	opacity: 0.3;
+}
+
+.breadcrumbs a[href]:hover {
+	opacity: 0.6;
+}
+
+.breadcrumbs a[href]:active {
+	opacity: 0.1;
+}
+
+/* Фильтр */
+
+.filter__title,
+.sort__title {
+	font-family: "Gilroy", sans-serif;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.filter__title {
+	background-color: #dcdcdc;
+}
+
+.filter__form {
+	background-color: var(--basic-grey-light);
+}
+
+.filter__form fieldset {
+	border: 0;
+}
+
+.filter__name {
+	font-family: "Gilroy", sans-serif;
+	font-weight: 800;
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 0.1em;
+}
+
+.input-range__field {
+	font-family: "Gilroy", sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.filter__list {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+.filter__submit {
+	background-color: var(--special-yellow-dark);
+	border: 0;
+}
+
+.filter__submit:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+/* Сортировка */
+
+.products__sort-area {
+	background-color: var(--basic-grey-light);
+}
+
+.sort__item button {
+	border: 0;
+	background-color: transparent;
+	font-size: 14px;
+	line-height: 19px;
+	opacity: 0.3;
+}
+
+.sort__item button:hover {
+	opacity: 0.6;
+}
+
+.sort__item button:active {
+	opacity: 1;
+}
+
+/* Товары */
+
+.products__txt-wrapper {
+	font-family: "Gilroy", sans-serif;
+	letter-spacing: 0.05em;
+}
+
+.products__title {
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.products__price {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.products__hover {
+	display: none;
+}
+
+.products__display:hover img {
+	opacity: 0.7;
+}
+
+.products__hover-cart {
+	background-color: var(--special-yellow-dark);
+}
+
+.products__hover-cart:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.products__hover-compare {
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: 0.1em;
+	opacity: 0.5;
+}
+
+.products__hover-compare:hover {
+	opacity: 1;
+}
+
+.products__hover-compare:active {
+	opacity: 0.2;
+}
+
+/* Пагинация */
+
+.pagination {
+	background-color: #ebebeb;
+	font-family: "Gilroy", sans-serif;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.pagination__list a[href] {
+	opacity: 0.3;
+}
+
+.pagination__btn:hover {
+	background-color: #d9d9d9;
+}
+
+.pagination__btn:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination__item a[href]:hover {
+	opacity: 0.6;
+}
+
+.pagination__item a[href]:active {
+	opacity: 1;
+}
+
+/* Footer */
+
+.page-footer .exit {
+	opacity: 0.3;
+}
+
+.page-footer .exit:hover {
+	opacity: 0.7;
+}
+
+.page-footer .exit:active {
+	opacity: 1;
+}

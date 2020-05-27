@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Моноподы для селфи: Девайс</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body class="page">
@@ -36,8 +38,8 @@
 
     <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__item dropdown" id="catalog"><a role="menu" aria-haspopup="true" aria-expanded="false">Каталог
-            товаров</a>
+        <li class="nav__item" id="catalog"><a class="link dropdown" role="menu" aria-haspopup="true"
+            aria-expanded="false">Каталог товаров</a>
           <ul class="dropdown__list">
             <li class="dropdown__item"><a href="">Виртуальная реальность</a></li>
             <li class="dropdown__item"><a aria-current="page">Моноподы для селфи</a></li>
@@ -51,15 +53,15 @@
             <li class="dropdown__item"><a href="">Квадрокоптер</a></li>
           </ul>
         </li>
-        <li class="nav__item"><a href="">Доставка</a></li>
-        <li class="nav__item"><a href="">Гарантия</a></li>
-        <li class="nav__item"><a href="">Контакты</a></li>
+        <li class="nav__item"><a class="link" href="">Доставка</a></li>
+        <li class="nav__item"><a class="link" href="">Гарантия</a></li>
+        <li class="nav__item"><a class="link" href="">Контакты</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="page-content">
-    <h1>Моноподы для селфи</h1>
+    <h1 class="page-title">Моноподы для селфи</h1>
 
     <ul class="breadcrumbs">
       <li class="breadcrumbs__item"><a href="index.html" aria-label="На главную страницу">Главная</a></li>
@@ -142,7 +144,7 @@
             </ul>
           </fieldset>
 
-          <button class="filter__submit" type="submit">Показать</button>
+          <button class="filter__submit link" type="submit">Показать</button>
         </form>
       </section>
 
@@ -166,72 +168,85 @@
 
         <ul class="products__list">
           <li class="products__item">
-            <div class="products__img-wrapper">
-              <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка" aria-hidden="true">
+            <div class="products__display">
+              <div class="products__img-wrapper">
+                <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка" aria-hidden="true">
+              </div>
+              <div class="products__txt-wrapper">
+                <a class="products__link" href="">
+                  <h3 class="products__title">Любительская селфи-палка</h3>
+                </a>
+                <p class="products__price">500 руб.</p>
+              </div>
             </div>
-            <div class="products__txt-wrapper">
-              <a class="products__link" href="">
-                <h3 class="products__title">Любительская селфи-палка</h3>
-              </a>
-              <p class="products__price">500 руб.</p>
-            </div>
+
             <div class="products__hover">
-              <a class="products__hover-cart" href="">В корзину</a>
+              <a class="products__hover-cart link" href="">В корзину</a>
               <a class="products__hover-compare" href="">Добавить к сравнению</a>
             </div>
           </li>
 
           <li class="products__item">
-            <div class="products__img-wrapper">
-              <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка" aria-hidden="true">
+            <div class="products__display">
+              <div class="products__img-wrapper">
+                <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка"
+                  aria-hidden="true">
+              </div>
+              <div class="products__txt-wrapper">
+                <a class="products__link" href="">
+                  <h3 class="products__title">Профессиональная селфи-палка</h3>
+                </a>
+                <p class="products__price">1 500 руб.</p>
+              </div>
             </div>
-            <div class="products__txt-wrapper">
-              <a class="products__link" href="">
-                <h3 class="products__title">Профессиональная селфи-палка</h3>
-              </a>
-              <p class="products__price">1 500 руб.</p>
-            </div>
+
             <div class="products__hover">
-              <a class="products__hover-cart" href="">В корзину</a>
+              <a class="products__hover-cart link" href="">В корзину</a>
               <a class="products__hover-compare" href="">Добавить к сравнению</a>
             </div>
           </li>
 
           <li class="products__item">
-            <div class="products__img-wrapper">
-              <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка" aria-hidden="true">
+            <div class="products__display">
+              <div class="products__img-wrapper">
+                <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка" aria-hidden="true">
+              </div>
+              <div class="products__txt-wrapper">
+                <a class="products__link" href="">
+                  <h3 class="products__title">Непотопляемая селфи-палка</h3>
+                </a>
+                <p class="products__price">2 500 руб.</p>
+              </div>
             </div>
-            <div class="products__txt-wrapper">
-              <a class="products__link" href="">
-                <h3 class="products__title">Непотопляемая селфи-палка</h3>
-              </a>
-              <p class="products__price">2 500 руб.</p>
-            </div>
+
             <div class="products__hover">
-              <a class="products__hover-cart" href="">В корзину</a>
+              <a class="products__hover-cart link" href="">В корзину</a>
               <a class="products__hover-compare" href="">Добавить к сравнению</a>
             </div>
           </li>
 
           <li class="products__item">
-            <div class="products__img-wrapper">
-              <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной" aria-hidden="true">
+            <div class="products__display">
+              <div class="products__img-wrapper">
+                <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной" aria-hidden="true">
+              </div>
+              <div class="products__txt-wrapper">
+                <a class="products__link" href="">
+                  <h3 class="products__title">Селфи-палка «Следуй за мной»</h3>
+                </a>
+                <p class="products__price">4 900 руб.</p>
+              </div>
             </div>
-            <div class="products__txt-wrapper">
-              <a class="products__link" href="">
-                <h3 class="products__title">Селфи-палка «Следуй за мной»</h3>
-              </a>
-              <p class="products__price">4 900 руб.</p>
-            </div>
+
             <div class="products__hover">
-              <a class="products__hover-cart" href="">В корзину</a>
+              <a class="products__hover-cart link" href="">В корзину</a>
               <a class="products__hover-compare" href="">Добавить к сравнению</a>
             </div>
           </li>
         </ul>
 
         <div class="pagination" aria-label="Страницы">
-          <a class="pagination__prev" aria-disabled="true">Назад</a>
+          <a class="pagination__btn prev" aria-disabled="true">Назад</a>
 
           <ul class="pagination__list">
             <li class="pagination__item"><a aria-current="page">1</a></li>
@@ -239,7 +254,7 @@
             <li class="pagination__item"><a href="">3</a></li>
           </ul>
 
-          <a class="pagination__next" href="">Вперед</a>
+          <a class="pagination__btn next" href="">Вперед</a>
         </div>
       </section>
     </div>
@@ -270,9 +285,9 @@
       <p class="footer-center__txt">г. Москва, ул. Строителей, 15</p>
 
       <ul class="footer-center__list">
-        <li class="footer-center__item"><a href="">Доставка</a></li>
-        <li class="footer-center__item"><a href="">Гарантия</a></li>
-        <li class="footer-center__item"><a href="">Контакты</a></li>
+        <li class="footer-center__item"><a class="link" href="">Доставка</a></li>
+        <li class="footer-center__item"><a class="link" href="">Гарантия</a></li>
+        <li class="footer-center__item"><a class="link" href="">Контакты</a></li>
       </ul>
 
       <p class="footer-center__tel"><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
