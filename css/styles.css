@@ -10,7 +10,7 @@
 @font-face {
 	font-family: "Open Sans";
 	font-style: normal;
-	font-weight: normal;
+	font-weight: 400;
 	src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
 }
 
@@ -38,6 +38,9 @@
 	--basic-grey-light: #e5e5e5;
 	--basic-white: #ffffff;
 
+	--white-alpha-3: rgba(255, 255, 255, 0.3);
+	--black-alpha-3: rgba(0, 0, 0, 0.3);
+
 	--special-yellow-dark: #f0c52e;
 	--special-yellow: #f7e296;
 
@@ -47,10 +50,9 @@
 /* Глобальные стили */
 
 body {
-	min-width: 1200px;
 	margin: 0;
 	padding: 0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', Arial, sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 20px;
@@ -61,8 +63,9 @@ a {
 	color: var(--basic-black);
 }
 
-ul {
+.list-reset {
 	list-style: none;
+	padding-left: 0;
 }
 
 img {
@@ -107,16 +110,12 @@ img {
 	background-color: transparent;
 }
 
-.search__input[placeholder] {
+.search__input::placeholder {
 	opacity: 0.3;
 }
 
-.search__input[placeholder]:hover {
+.search__input:hover::placeholder {
 	opacity: 0.6;
-}
-
-.search__input:focus[placeholder] {
-	opacity: 1;
 }
 
 .search__btn {
@@ -133,7 +132,7 @@ img {
 }
 
 .search__btn:active {
-	color: rgba(255, 255, 255, 0.3);
+	color: var(--white-alpha-3);
 }
 
 .header-top__list a:hover {
@@ -145,7 +144,7 @@ img {
 }
 
 .link {
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy";
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 22px;
@@ -166,8 +165,13 @@ img {
 	opacity: 0.3;
 }
 
-.dropdown__list {
+.dropdown__wrapper {
 	display: none;
+}
+
+.dropdown:hover + .dropdown__wrapper,
+.dropdown__wrapper:hover {
+	display: block;
 }
 
 .nav__list a[href]:hover {
@@ -181,7 +185,7 @@ img {
 /* Промо Слайдеры */
 
 .slider {
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy";
 	font-weight: 300;
 }
 
@@ -192,7 +196,7 @@ img {
 }
 
 .slider__txt {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans";
 }
 
 .slider__link {
@@ -200,7 +204,7 @@ img {
 }
 
 .slider__link:active {
-	color: rgba(0, 0, 0, 0.3);
+	color: var(--black-alpha-3);
 }
 
 .specs {
@@ -220,7 +224,7 @@ img {
 /* Популярные разделы */
 
 .popular {
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy";
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 22px;
@@ -244,7 +248,7 @@ img {
 }
 
 .title {
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy";
 	font-weight: 800;
 	font-size: 47px;
 	line-height: 58px;
@@ -257,6 +261,13 @@ img {
 }
 
 /* Бренды */
+.pop-brands__item img {
+	filter: grayscale(1) opacity(0.2);
+}
+
+.pop-brands__item img:hover {
+	filter: none;
+}
 
 /* О нас */
 
@@ -265,7 +276,7 @@ img {
 }
 
 .about__list {
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy";
 	font-weight: 800;
 	font-size: 16px;
 	line-height: 28px;
@@ -276,7 +287,7 @@ img {
 }
 
 .about__link:active {
-	color: rgba(0, 0, 0, 0.3);
+	color: var(--black-alpha-3);
 }
 
 /* Контакты */
@@ -285,12 +296,16 @@ img {
 	line-height: 28px;
 }
 
+.contacts__map-link img {
+	display: block;
+}
+
 .contacts__link {
 	background-color: var(--special-yellow-dark);
 }
 
 .contacts__link:active {
-	color: rgba(0, 0, 0, 0.3);
+	color: var(--black-alpha-3);
 }
 
 /* Footer */
@@ -359,7 +374,7 @@ img {
 /* Page Content */
 
 .page-title {
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy";
 	font-weight: 800;
 	font-size: 47px;
 	line-height: 58px;
@@ -383,7 +398,7 @@ img {
 
 .filter__title,
 .sort__title {
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy";
 	font-weight: 800;
 	font-size: 16px;
 	line-height: 20px;
@@ -404,7 +419,7 @@ img {
 }
 
 .filter__name {
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy";
 	font-weight: 800;
 	font-size: 14px;
 	line-height: 17px;
@@ -412,7 +427,7 @@ img {
 }
 
 .input-range__field {
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy";
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 16px;
@@ -423,13 +438,18 @@ img {
 	line-height: 19px;
 }
 
+.filter__label {
+	cursor: pointer;
+}
+
 .filter__submit {
 	background-color: var(--special-yellow-dark);
 	border: 0;
+	cursor: pointer;
 }
 
 .filter__submit:active {
-	color: rgba(0, 0, 0, 0.3);
+	color: var(--black-alpha-3);
 }
 
 /* Сортировка */
@@ -444,20 +464,25 @@ img {
 	font-size: 14px;
 	line-height: 19px;
 	opacity: 0.3;
+	cursor: pointer;
 }
 
-.sort__item button:hover {
+.sort__item button:not(.active-btn):hover {
 	opacity: 0.6;
 }
 
-.sort__item button:active {
+.sort__item button:not(.active-btn):active {
+	opacity: 1;
+}
+
+.sort__item .active-btn {
 	opacity: 1;
 }
 
 /* Товары */
 
 .products__txt-wrapper {
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy";
 	letter-spacing: 0.05em;
 }
 
@@ -477,7 +502,7 @@ img {
 	display: none;
 }
 
-.products__display:hover img {
+.products__item:hover .products__img-wrapper {
 	opacity: 0.7;
 }
 
@@ -486,7 +511,7 @@ img {
 }
 
 .products__hover-cart:active {
-	color: rgba(0, 0, 0, 0.3);
+	color: var(--black-alpha-3);
 }
 
 .products__hover-compare {
@@ -508,7 +533,7 @@ img {
 
 .pagination {
 	background-color: #ebebeb;
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy";
 	font-weight: 800;
 	font-size: 16px;
 	line-height: 20px;
@@ -520,12 +545,16 @@ img {
 	opacity: 0.3;
 }
 
+.pagination__btn {
+	cursor: pointer;
+}
+
 .pagination__btn:hover {
 	background-color: #d9d9d9;
 }
 
 .pagination__btn:active {
-	color: rgba(0, 0, 0, 0.3);
+	color: var(--black-alpha-3);
 }
 
 .pagination__item a[href]:hover {

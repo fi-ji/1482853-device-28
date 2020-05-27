@@ -11,9 +11,9 @@
 <body class="page">
 
   <header class="page-header">
-    <div class="logo-wrapper">
+    <a class="logo-wrapper">
       <img src="img/logo-device.svg" width="163" height="35" alt="Логотип «Девайс»">
-    </div>
+    </a>
 
     <div class="header-top">
       <form class="search" role="search" action="https://echo.htmlacademy.ru/" method="GET">
@@ -23,11 +23,11 @@
       </form>
 
       <div class="header-top__menu">
-        <ul class="header-top__list">
+        <ul class="header-top__list list-reset">
           <li class="header-top__item"><a class="login" href="" aria-label="Войти в свой аккаунт">Войти</a></li>
         </ul>
 
-        <ul class="header-top__list">
+        <ul class="header-top__list list-reset">
           <li class="header-top__item"><a class="compare" href="">Сравнить</a></li>
           <li class="header-top__item"><a class="cart" href="">Корзина</a></li>
         </ul>
@@ -35,21 +35,23 @@
     </div>
 
     <nav class="nav">
-      <ul class="nav__list">
+      <ul class="nav__list list-reset">
         <li class="nav__item"><a class="link dropdown" role="menu" aria-haspopup="true" aria-expanded="false">Каталог
             товаров</a>
-          <ul class="dropdown__list">
-            <li class="dropdown__item"><a href="">Виртуальная реальность</a></li>
-            <li class="dropdown__item"><a href="catalog.html">Моноподы для селфи</a></li>
-            <li class="dropdown__item"><a href="">Экшн-камеры</a></li>
-          </ul>
-          <ul class="dropdown__list">
-            <li class="dropdown__item"><a href="">Фитнес-браслеты</a></li>
-            <li class="dropdown__item"><a href="">Умные часы</a></li>
-          </ul>
-          <ul class="dropdown__list">
-            <li class="dropdown__item"><a href="">Квадрокоптер</a></li>
-          </ul>
+          <div class="dropdown__wrapper">
+            <ul class="dropdown__list list-reset">
+              <li class="dropdown__item"><a href="">Виртуальная реальность</a></li>
+              <li class="dropdown__item"><a href="catalog.html">Моноподы для селфи</a></li>
+              <li class="dropdown__item"><a href="">Экшн-камеры</a></li>
+            </ul>
+            <ul class="dropdown__list list-reset">
+              <li class="dropdown__item"><a href="">Фитнес-браслеты</a></li>
+              <li class="dropdown__item"><a href="">Умные часы</a></li>
+            </ul>
+            <ul class="dropdown__list list-reset">
+              <li class="dropdown__item"><a href="">Квадрокоптер</a></li>
+            </ul>
+          </div>
         </li>
         <li class="nav__item"><a class="link" href="">Доставка</a></li>
         <li class="nav__item"><a class="link" href="">Гарантия</a></li>
@@ -155,7 +157,7 @@
     <section class="popular">
       <h2 class="visually-hidden">Популярные разделы каталога</h2>
 
-      <ul class="popular__list">
+      <ul class="popular__list list-reset">
         <li class="popular__item">
           <a class="popular__link" href="">
             <div class="popular__img-wrapper">
@@ -211,7 +213,7 @@
       <h2 class="visually-hidden">Сервисы</h2>
 
       <div class="services__container">
-        <ul class="services__controls">
+        <ul class="services__controls list-reset">
           <li><button class="services__controls-btn link" type="button" aria-label="О доставке">Доставка</button></li>
           <li><button class="services__controls-btn link" type="button" aria-label="О гарантии">Гарантия</button></li>
           <li><button class="services__controls-btn link" type="button" aria-label="О кредите">Кредит</button></li>
@@ -241,7 +243,7 @@
     <section class="pop-brands">
       <h2 class="visually-hidden">Популярные бренды</h2>
 
-      <ul class="pop-brands__list">
+      <ul class="pop-brands__list list-reset">
         <li class="pop-brands__item">
           <a class="pop-brands__link" href="">
             <img src="img/brand-1.png" width="260" height="100" alt="DJI">
@@ -301,11 +303,11 @@
       </div>
 
       <div class="footer-top__menu">
-        <ul class="footer-top__login-list">
+        <ul class="footer-top__login-list list-reset">
           <li class="footer-top__item"><a class="login" href="" aria-label="Войти в свой аккаунт">Войти</a></li>
         </ul>
 
-        <ul class="footer-top__list">
+        <ul class="footer-top__list list-reset">
           <li class="footer-top__item"><a class="compare" href="">Сравнить</a></li>
           <li class="footer-top__item"><a class="cart" href="">Корзина</a></li>
         </ul>
@@ -325,7 +327,7 @@
     </div>
 
     <div class="footer-bottom">
-      <ul class="social">
+      <ul class="social list-reset">
         <li class="social__item facebook">
           <a href="" target="_blank" aria-label="в Facebook">Фейсбук</a>
         </li>

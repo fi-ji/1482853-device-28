@@ -23,13 +23,13 @@
       </form>
 
       <div class="header-top__menu">
-        <ul class="header-top__list">
+        <ul class="header-top__list list-reset">
           <li class="header-top__item"><a class="login" href="" aria-label="На страницу аккаунта">Валентин Петухов</a>
           </li>
           <li class="header-top__item"><a class="exit" href="" aria-label="Выйти из аккаунта">Выйти</a></li>
         </ul>
 
-        <ul class="header-top__list">
+        <ul class="header-top__list list-reset">
           <li class="header-top__item"><a class="compare" href="">Сравнить</a></li>
           <li class="header-top__item"><a class="cart" href="">Корзина</a></li>
         </ul>
@@ -37,21 +37,23 @@
     </div>
 
     <nav class="nav">
-      <ul class="nav__list">
+      <ul class="nav__list list-reset">
         <li class="nav__item" id="catalog"><a class="link dropdown" role="menu" aria-haspopup="true"
             aria-expanded="false">Каталог товаров</a>
-          <ul class="dropdown__list">
-            <li class="dropdown__item"><a href="">Виртуальная реальность</a></li>
-            <li class="dropdown__item"><a aria-current="page">Моноподы для селфи</a></li>
-            <li class="dropdown__item"><a href="">Экшн-камеры</a></li>
-          </ul>
-          <ul class="dropdown__list">
-            <li class="dropdown__item"><a href="">Фитнес-браслеты</a></li>
-            <li class="dropdown__item"><a href="">Умные часы</a></li>
-          </ul>
-          <ul class="dropdown__list">
-            <li class="dropdown__item"><a href="">Квадрокоптер</a></li>
-          </ul>
+          <div class="dropdown__wrapper">
+            <ul class="dropdown__list list-reset">
+              <li class="dropdown__item"><a href="">Виртуальная реальность</a></li>
+              <li class="dropdown__item"><a aria-current="page">Моноподы для селфи</a></li>
+              <li class="dropdown__item"><a href="">Экшн-камеры</a></li>
+            </ul>
+            <ul class="dropdown__list list-reset">
+              <li class="dropdown__item"><a href="">Фитнес-браслеты</a></li>
+              <li class="dropdown__item"><a href="">Умные часы</a></li>
+            </ul>
+            <ul class="dropdown__list list-reset">
+              <li class="dropdown__item"><a href="">Квадрокоптер</a></li>
+            </ul>
+          </div>
         </li>
         <li class="nav__item"><a class="link" href="">Доставка</a></li>
         <li class="nav__item"><a class="link" href="">Гарантия</a></li>
@@ -63,7 +65,7 @@
   <main class="page-content">
     <h1 class="page-title">Моноподы для селфи</h1>
 
-    <ul class="breadcrumbs">
+    <ul class="breadcrumbs list-reset">
       <li class="breadcrumbs__item"><a href="index.html" aria-label="На главную страницу">Главная</a></li>
       <li class="breadcrumbs__item"><a href="#catalog" aria-label="В раздел с каталогом товаров">Каталог товаров</a>
       </li>
@@ -106,7 +108,7 @@
 
           <fieldset class="filter__color">
             <legend class="filter__name">Цвет</legend>
-            <ul class="filter__list">
+            <ul class="filter__list list-reset">
               <li class="filter__item">
                 <input class="filter__checkbox" type="checkbox" name="black" id="filter-black" checked>
                 <label class="filter__label" for="filter-black">Чёрный</label>
@@ -132,7 +134,7 @@
 
           <fieldset class="filter__bluetooth">
             <legend class="filter__name">Bluetooth</legend>
-            <ul class="filter__list">
+            <ul class="filter__list list-reset">
               <li class="filter__item">
                 <input class="filter__radio" type="radio" name="bluetooth" id="filter-bluetooth" value="yes" checked>
                 <label class="filter__label" for="filter-bluetooth">Есть</label>
@@ -154,30 +156,28 @@
         <div class="products__sort-area sort">
           <p class="sort__title">Сортировка:</p>
 
-          <ul class="sort__list">
-            <li class="sort__item"><button type="button">По цене</button></li>
+          <ul class="sort__list list-reset">
+            <li class="sort__item"><button class="active-btn" type="button">По цене</button></li>
             <li class="sort__item"><button type="button">По типу</button></li>
             <li class="sort__item"><button type="button">По популярности</button></li>
           </ul>
 
-          <ul class="sort__list">
+          <ul class="sort__list list-reset">
             <li class="sort__item"><button class="sort__up-btn" type="button">По возрастанию</button></li>
             <li class="sort__item"><button class="sort__down-btn" type="button">По убыванию</button></li>
           </ul>
         </div>
 
-        <ul class="products__list">
+        <ul class="products__list list-reset">
           <li class="products__item">
-            <div class="products__display">
-              <div class="products__img-wrapper">
-                <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка" aria-hidden="true">
-              </div>
-              <div class="products__txt-wrapper">
-                <a class="products__link" href="">
-                  <h3 class="products__title">Любительская селфи-палка</h3>
-                </a>
-                <p class="products__price">500 руб.</p>
-              </div>
+            <div class="products__img-wrapper">
+              <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка" aria-hidden="true">
+            </div>
+            <div class="products__txt-wrapper">
+              <a class="products__link" href="">
+                <h3 class="products__title">Любительская селфи-палка</h3>
+              </a>
+              <p class="products__price">500 руб.</p>
             </div>
 
             <div class="products__hover">
@@ -187,17 +187,14 @@
           </li>
 
           <li class="products__item">
-            <div class="products__display">
-              <div class="products__img-wrapper">
-                <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка"
-                  aria-hidden="true">
-              </div>
-              <div class="products__txt-wrapper">
-                <a class="products__link" href="">
-                  <h3 class="products__title">Профессиональная селфи-палка</h3>
-                </a>
-                <p class="products__price">1 500 руб.</p>
-              </div>
+            <div class="products__img-wrapper">
+              <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка" aria-hidden="true">
+            </div>
+            <div class="products__txt-wrapper">
+              <a class="products__link" href="">
+                <h3 class="products__title">Профессиональная селфи-палка</h3>
+              </a>
+              <p class="products__price">1 500 руб.</p>
             </div>
 
             <div class="products__hover">
@@ -207,16 +204,14 @@
           </li>
 
           <li class="products__item">
-            <div class="products__display">
-              <div class="products__img-wrapper">
-                <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка" aria-hidden="true">
-              </div>
-              <div class="products__txt-wrapper">
-                <a class="products__link" href="">
-                  <h3 class="products__title">Непотопляемая селфи-палка</h3>
-                </a>
-                <p class="products__price">2 500 руб.</p>
-              </div>
+            <div class="products__img-wrapper">
+              <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка" aria-hidden="true">
+            </div>
+            <div class="products__txt-wrapper">
+              <a class="products__link" href="">
+                <h3 class="products__title">Непотопляемая селфи-палка</h3>
+              </a>
+              <p class="products__price">2 500 руб.</p>
             </div>
 
             <div class="products__hover">
@@ -226,16 +221,14 @@
           </li>
 
           <li class="products__item">
-            <div class="products__display">
-              <div class="products__img-wrapper">
-                <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной" aria-hidden="true">
-              </div>
-              <div class="products__txt-wrapper">
-                <a class="products__link" href="">
-                  <h3 class="products__title">Селфи-палка «Следуй за мной»</h3>
-                </a>
-                <p class="products__price">4 900 руб.</p>
-              </div>
+            <div class="products__img-wrapper">
+              <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной" aria-hidden="true">
+            </div>
+            <div class="products__txt-wrapper">
+              <a class="products__link" href="">
+                <h3 class="products__title">Селфи-палка «Следуй за мной»</h3>
+              </a>
+              <p class="products__price">4 900 руб.</p>
             </div>
 
             <div class="products__hover">
@@ -248,7 +241,7 @@
         <div class="pagination" aria-label="Страницы">
           <a class="pagination__btn prev" aria-disabled="true">Назад</a>
 
-          <ul class="pagination__list">
+          <ul class="pagination__list list-reset">
             <li class="pagination__item"><a aria-current="page">1</a></li>
             <li class="pagination__item"><a href="">2</a></li>
             <li class="pagination__item"><a href="">3</a></li>
@@ -268,13 +261,13 @@
       </a>
 
       <div class="footer-top__menu">
-        <ul class="footer-top__login-list">
+        <ul class="footer-top__login-list list-reset">
           <li class="footer-top__item"><a class="login" href="" aria-label="На страницу аккаунта">Валентин Петухов</a>
           </li>
           <li class="footer-top__item"><a class="exit" href="" aria-label="Выйти из аккаунта">Выйти</a></li>
         </ul>
 
-        <ul class="footer-top__list">
+        <ul class="footer-top__list list-reset">
           <li class="footer-top__item"><a class="compare" href="">Сравнить</a></li>
           <li class="footer-top__item"><a class="cart" href="">Корзина</a></li>
         </ul>
@@ -284,7 +277,7 @@
     <div class="footer-center">
       <p class="footer-center__txt">г. Москва, ул. Строителей, 15</p>
 
-      <ul class="footer-center__list">
+      <ul class="footer-center__list list-reset">
         <li class="footer-center__item"><a class="link" href="">Доставка</a></li>
         <li class="footer-center__item"><a class="link" href="">Гарантия</a></li>
         <li class="footer-center__item"><a class="link" href="">Контакты</a></li>
@@ -294,7 +287,7 @@
     </div>
 
     <div class="footer-bottom">
-      <ul class="social">
+      <ul class="social list-reset">
         <li class="social__item facebook">
           <a href="" target="_blank" aria-label="в Facebook">Фейсбук</a>
         </li>
