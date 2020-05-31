@@ -10,65 +10,67 @@
 
 <body class="page">
 
-  <header class="page-header container">
-    <div class="top-container">
-      <a class="logo-wrapper">
-        <img class="top-logo" src="img/logo-device.svg" width="163" height="35" alt="Логотип «Девайс»">
-      </a>
+  <header class="page-header">
+    <div class="container">
+      <div class="top-container">
+        <a class="logo-wrapper">
+          <img class="top-logo" src="img/logo-device.svg" width="163" height="35" alt="Логотип «Девайс»">
+        </a>
 
-      <div class="header-top">
-        <form class="search" role="search" action="https://echo.htmlacademy.ru/" method="GET">
-          <label class="search__label visually-hidden" for="search-field">Поиск</label>
-          <input class="search__input" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
-          <button class="search__btn" type="submit">Найти</button>
-        </form>
+        <div class="header-top">
+          <form class="search" role="search" action="https://echo.htmlacademy.ru/" method="GET">
+            <label class="search__label visually-hidden" for="search-field">Поиск</label>
+            <input class="search__input" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+            <button class="search__btn" type="submit">Найти</button>
+          </form>
 
-        <div class="header-top__menu mini-container">
-          <ul class="header-top__list list-reset">
-            <li class="header-top__item"><a class="login" href="" aria-label="Войти в свой аккаунт">Войти</a></li>
-          </ul>
+          <div class="header-top__menu mini-container">
+            <ul class="header-top__list list-reset">
+              <li class="header-top__item"><a class="login" href="" aria-label="Войти в свой аккаунт">Войти</a></li>
+            </ul>
 
-          <ul class="header-top__list list-reset">
-            <li class="header-top__item"><a class="compare" href="">Сравнить</a></li>
-            <li class="header-top__item"><a class="cart" href="">Корзина</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <nav class="nav">
-        <ul class="nav__list list-reset">
-          <li class="nav__item nav__item--catalog"><a class="link dropdown" role="menu" aria-haspopup="true"
-              aria-expanded="false">Каталог товаров</a>
-            <div class="dropdown__wrapper">
-              <ul class="dropdown__list list-reset">
-                <li class="dropdown__item"><a href="">Виртуальная реальность</a></li>
-                <li class="dropdown__item"><a href="catalog.html">Моноподы для селфи</a></li>
-                <li class="dropdown__item"><a href="">Экшн-камеры</a></li>
-              </ul>
-              <ul class="dropdown__list list-reset">
-                <li class="dropdown__item"><a href="">Фитнес-браслеты</a></li>
-                <li class="dropdown__item"><a href="">Умные часы</a></li>
-              </ul>
-              <ul class="dropdown__list last list-reset">
-                <li class="dropdown__item"><a href="">Квадрокоптер</a></li>
-              </ul>
-            </div>
-          </li>
-          <div class="mini-container">
-            <li class="nav__item nav__item--delivery"><a class="link" href="">Доставка</a></li>
-            <li class="nav__item"><a class="link" href="">Гарантия</a></li>
-            <li class="nav__item nav__item--contacts"><a class="link" href="">Контакты</a></li>
+            <ul class="header-top__list header-top__list--user list-reset">
+              <li class="header-top__item"><a class="compare" href="">Сравнить</a></li>
+              <li class="header-top__item"><a class="cart" href="">Корзина</a></li>
+            </ul>
           </div>
-        </ul>
-      </nav>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav__list list-reset">
+            <li class="nav__item nav__item--catalog"><a class="link dropdown" role="menu" aria-haspopup="true"
+                aria-expanded="false">Каталог товаров</a>
+              <div class="dropdown__wrapper">
+                <ul class="dropdown__list list-reset">
+                  <li class="dropdown__item"><a href="">Виртуальная реальность</a></li>
+                  <li class="dropdown__item"><a href="catalog.html">Моноподы для селфи</a></li>
+                  <li class="dropdown__item"><a href="">Экшн-камеры</a></li>
+                </ul>
+                <ul class="dropdown__list list-reset">
+                  <li class="dropdown__item"><a href="">Фитнес-браслеты</a></li>
+                  <li class="dropdown__item"><a href="">Умные часы</a></li>
+                </ul>
+                <ul class="dropdown__list list-reset">
+                  <li class="dropdown__item"><a href="">Квадрокоптер</a></li>
+                </ul>
+              </div>
+            </li>
+            <div class="mini-container">
+              <li class="nav__item nav__item--delivery"><a class="link" href="">Доставка</a></li>
+              <li class="nav__item"><a class="link" href="">Гарантия</a></li>
+              <li class="nav__item nav__item--contacts"><a class="link" href="">Контакты</a></li>
+            </div>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
   <main class="page-content">
-    <div class="container">
-      <h1 class="visually-hidden">Интернет-магазин гаджетов "Device"</h1>
+    <h1 class="visually-hidden">Интернет-магазин гаджетов "Device"</h1>
 
-      <section class="slider">
+    <section class="slider">
+      <div class="container">
         <div class="top-container">
           <h2 class="visually-hidden">Топ-3 гаджета</h2>
 
@@ -159,9 +161,11 @@
             </li>
           </ol>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="popular">
+    <section class="popular">
+      <div class="container">
         <h2 class="visually-hidden">Популярные разделы каталога</h2>
 
         <ul class="popular__list list-reset">
@@ -214,8 +218,8 @@
             </a>
           </li>
         </ul>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <section class="services">
       <div class="container">
@@ -251,8 +255,9 @@
         </div>
       </div>
     </section>
-    <div class="container">
-      <section class="pop-brands">
+
+    <section class="pop-brands">
+      <div class="container">
         <h2 class="visually-hidden">Популярные бренды</h2>
 
         <ul class="pop-brands__list list-reset">
@@ -277,9 +282,11 @@
             </a>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <div class="about-contacts-wrapper">
+    <div class="about-contacts-wrapper">
+      <div class="container">
         <section class="about">
           <h2 class="about__title title">О нас</h2>
 
@@ -317,11 +324,11 @@
         </a>
 
         <div class="footer-top__menu">
-          <ul class="footer-top__list footer-top__list--login list-reset">
+          <ul class="footer-top__list list-reset">
             <li class="footer-top__item"><a class="login" href="" aria-label="Войти в свой аккаунт">Войти</a></li>
           </ul>
 
-          <ul class="footer-top__list list-reset">
+          <ul class="footer-top__list footer-top__list--user list-reset">
             <li class="footer-top__item"><a class="compare" href="">Сравнить</a></li>
             <li class="footer-top__item"><a class="cart" href="">Корзина</a></li>
           </ul>
@@ -332,9 +339,9 @@
         <p class="footer-center__txt">г. Москва, ул. Строителей, 15</p>
 
         <ul class="footer-center__list list-reset">
-          <li class="footer-center__item footer-center__item--delivery"><a class="link" href="">Доставка</a></li>
+          <li class="footer-center__item"><a class="link" href="">Доставка</a></li>
           <li class="footer-center__item"><a class="link" href="">Гарантия</a></li>
-          <li class="footer-center__item footer-center__item--contacts"><a class="link" href="">Контакты</a></li>
+          <li class="footer-center__item"><a class="link" href="">Контакты</a></li>
         </ul>
 
         <p class="footer-center__tel"><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
