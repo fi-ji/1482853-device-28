@@ -39,7 +39,7 @@
         <nav class="nav">
           <ul class="nav__list list-reset">
             <li class="nav__item nav__item--catalog"><a class="link dropdown" role="menu" aria-haspopup="true"
-                aria-expanded="false"><span>Каталог товаров</span></a>
+                aria-expanded="false" tabindex="0"><span>Каталог товаров</span></a>
               <div class="dropdown__wrapper">
                 <ul class="dropdown__list list-reset">
                   <li class="dropdown__item"><a href="">Виртуальная реальность</a></li>
@@ -177,7 +177,7 @@
               <h3 class="popular__title">Виртуальная реальность</h3>
             </a>
           </li>
-          <li class="popular__item">
+          <li class="popular__item popular__item--monopod">
             <a class="popular__link" href="catalog.html">
               <div class="popular__img-wrapper">
                 <img class="popular__img" src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
@@ -193,7 +193,7 @@
               <h3 class="popular__title">Экшн-камеры</h3>
             </a>
           </li>
-          <li class="popular__item popular__item--fitnes">
+          <li class="popular__item popular__item--fitness">
             <a class="popular__link" href="">
               <div class="popular__img-wrapper">
                 <img class="popular__img" src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
@@ -227,10 +227,19 @@
 
         <div class="services__container">
           <ul class="services__controls list-reset">
-            <li><button class="services__controls-btn services__controls-btn--active link" type="button"
-                aria-label="О доставке">Доставка</button></li>
-            <li><button class="services__controls-btn link" type="button" aria-label="О гарантии">Гарантия</button></li>
-            <li><button class="services__controls-btn link" type="button" aria-label="О кредите">Кредит</button></li>
+
+            <li class="services__controls-item">
+              <button class="services__controls-btn services__controls-btn--active link" type="button"
+                aria-label="О доставке">Доставка</button>
+            </li>
+
+            <li class="services__controls-item services__controls-item--garanty">
+              <button class="services__controls-btn link" type="button" aria-label="О гарантии">Гарантия</button>
+            </li>
+
+            <li class="services__controls-item">
+              <button class="services__controls-btn link" type="button" aria-label="О кредите">Кредит</button>
+            </li>
           </ul>
 
           <div class="services__wrapper">
@@ -293,7 +302,7 @@
           <p class="about__txt">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p class="about__txt">Мы можем доставить ваш товар в самые отдаленные точки
             России! DEVICE работает со многими транспортными компаниями:</p>
-          <ul class="about__list">
+          <ul class="about__list list-reset">
             <li class="about__item">Деловые линии</li>
             <li class="about__item">Автотрейдинг</li>
             <li class="about__item">ЖелДорЭкспедиция</li>
@@ -350,13 +359,13 @@
       <div class="footer-bottom">
         <ul class="social list-reset">
           <li class="social__item facebook">
-            <a href="" target="_blank" aria-label="в Facebook">Фейсбук</a>
+            <a href="" target="_blank" aria-label="в Facebook"><span class="visually-hidden">Facebook</span></a>
           </li>
           <li class="social__item instagram">
-            <a href="" target="_blank" aria-label="в Instagram">Инстаграм</a>
+            <a href="" target="_blank" aria-label="в Instagram"><span class="visually-hidden">Instagram</span></a>
           </li>
           <li class="social__item twitter">
-            <a href="" target="_blank" aria-label="в Twitter">Твиттер</a>
+            <a href="" target="_blank" aria-label="в Twitter"><span class="visually-hidden">Twitter</span></a>
           </li>
         </ul>
 
@@ -370,8 +379,9 @@
   <section class="write-us">
     <h2 class="visually-hidden">Напишите нам</h2>
 
+    <button class="write-us__btn" type="button" aria-label="Закрыть окно"><span
+        class="visually-hidden">Закрыть</span></button>
     <div class="write-us__form-wrapper">
-      <button class="write-us__btn" type="button" aria-label="Закрыть окно">Закрыть</button>
       <form class="write-us__form" action="https://echo.htmlacademy.ru/" method="POST">
         <div class="write-us__name-wrapper">
           <p class="write-us__name">
@@ -388,7 +398,7 @@
           <textarea class="write-us__textarea" name="letter" id="letter-field" placeholder="В свободной форме" cols="30"
             rows="2"></textarea>
         </p>
-        <button class="write-us__submit" type="submit">Отправить</button>
+        <button class="write-us__submit link" type="submit">Отправить</button>
       </form>
     </div>
   </section>
@@ -397,7 +407,8 @@
     <h2 class="visually-hidden">Карта</h2>
 
     <div class="map__wrapper">
-      <button class="map__btn" type="button" aria-label="Закрыть окно">Закрыть</button>
+      <button class="map__btn" type="button" aria-label="Закрыть окно"><span
+          class="visually-hidden">Закрыть</span></button>
 
       <div class="map__img-wrapper">
         <img src="img/map-big.png" width="994" height="593" alt="г. Москва, ул. Строителей, 15">
