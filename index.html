@@ -75,16 +75,14 @@
           <h2 class="visually-hidden">Топ-3 гаджета</h2>
 
           <div class="slider__controls">
-            <button class="slider__controls-btn" type="button" aria-label="Перейти на слайд о моноподе для селфи">Первый
-              слайд</button>
-            <button class="slider__controls-btn" type="button" aria-label="Перейти на слайд о фитнес-браслете">Второй
-              слайд</button>
-            <button class="slider__controls-btn" type="button" aria-label="Перейти на слайд о квадрокоптере">Третий
-              слайд</button>
+            <button class="slider__controls-btn slider__controls-btn--active" type="button"
+              aria-label="Перейти на слайд о моноподе для селфи"></button>
+            <button class="slider__controls-btn" type="button" aria-label="Перейти на слайд о фитнес-браслете"></button>
+            <button class="slider__controls-btn" type="button" aria-label="Перейти на слайд о квадрокоптере"></button>
           </div>
 
           <ol class="slider__list list-reset">
-            <li class="slider__item slide-one">
+            <li class="slider__item slider__item--monopod slider__item--current" data-order="01">
               <div class="slider__img-wrapper">
                 <img src="img/slider-1.png" width="384" height="486" alt="Монопод для селфи">
               </div>
@@ -92,8 +90,8 @@
               <div class="slider__content-wrapper mini-container">
                 <p class="slider__title">Делай селфи, <br> как Бен Стиллер!</p>
 
-                <p class="slider__txt">Самая длинная палка для селфи доступна в нашем магазине. <br>
-                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                <p class="slider__txt">Самая длинная палка для селфи доступна в&nbsp;нашем магазине.
+                  Восемь (Восемь, Карл!) метров длиной и&nbsp;весом всего 5&nbsp;килограмм.</p>
 
                 <a class="slider__link link" href="" aria-label="Подробнее о селфи-палке">Подробнее</a>
 
@@ -113,16 +111,16 @@
                 </dl>
               </div>
             </li>
-            <li class="slider__item slide-two">
+            <li class="slider__item slider__item--fitness" data-order="02">
               <div class="slider__img-wrapper">
                 <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
               </div>
 
               <div class="slider__content-wrapper mini-container">
-                <p class="slider__title">Худеем правильно!</p>
+                <p class="slider__title">Худеем <br> правильно!</p>
 
-                <p class="slider__txt">Мотивирующие фитнес-браслеты помогут найти в себе силы
-                  не пропускать занятия и соблюдать диету.</p>
+                <p class="slider__txt">Мотивирующие фитнес-браслеты помогут найти в&nbsp;себе силы
+                  не&nbsp;пропускать занятия и&nbsp;соблюдать диету.</p>
 
                 <a class="slider__link link" href="" aria-label="Подробнее о фитнес-браслетах">Подробнее</a>
 
@@ -134,7 +132,7 @@
                 </dl>
               </div>
             </li>
-            <li class="slider__item slide-three">
+            <li class="slider__item slider__item--quadro" data-order="03">
               <div class="slider__img-wrapper">
                 <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
               </div>
@@ -142,8 +140,8 @@
               <div class="slider__content-wrapper mini-container">
                 <p class="slider__title">Порхает как бабочка, жалит как пчела!</p>
 
-                <p class="slider__txt">Этот обычный, на первый взгляд, квадрокоптер оснащен
-                  мощным лазером, замаскированным под стандартную камеру.</p>
+                <p class="slider__txt">Этот обычный, на&nbsp;первый взгляд, квадрокоптер оснащен
+                  мощным&nbsp;лазером, замаскированным под стандартную камеру.</p>
 
                 <a class="slider__link link" href="" aria-label="Подробнее о квадрокоптере">Подробнее</a>
 
@@ -169,51 +167,33 @@
         <h2 class="visually-hidden">Популярные разделы каталога</h2>
 
         <ul class="popular__list list-reset">
-          <li class="popular__item">
+          <li class="popular__item popular__item--vr">
             <a class="popular__link" href="">
-              <div class="popular__img-wrapper">
-                <img class="popular__img" src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
-              </div>
               <h3 class="popular__title">Виртуальная реальность</h3>
             </a>
           </li>
           <li class="popular__item popular__item--monopod">
             <a class="popular__link" href="catalog.html">
-              <div class="popular__img-wrapper">
-                <img class="popular__img" src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
-              </div>
               <h3 class="popular__title">Моноподы <br> для селфи</h3>
             </a>
           </li>
-          <li class="popular__item">
+          <li class="popular__item popular__item--action-cam">
             <a class="popular__link" href="">
-              <div class="popular__img-wrapper">
-                <img class="popular__img" src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
-              </div>
               <h3 class="popular__title">Экшн-камеры</h3>
             </a>
           </li>
           <li class="popular__item popular__item--fitness">
             <a class="popular__link" href="">
-              <div class="popular__img-wrapper">
-                <img class="popular__img" src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
-              </div>
               <h3 class="popular__title">Фитнес-браслеты</h3>
             </a>
           </li>
-          <li class="popular__item">
+          <li class="popular__item popular__item--smart-watch">
             <a class="popular__link" href="">
-              <div class="popular__img-wrapper">
-                <img class="popular__img" src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
-              </div>
               <h3 class="popular__title">Умные часы</h3>
             </a>
           </li>
-          <li class="popular__item">
+          <li class="popular__item popular__item--quadro">
             <a class="popular__link" href="">
-              <div class="popular__img-wrapper">
-                <img class="popular__img" src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
-              </div>
               <h3 class="popular__title">Квадрокоптеры</h3>
             </a>
           </li>
@@ -243,22 +223,23 @@
           </ul>
 
           <div class="services__wrapper">
-            <div class="services__block services__block--delivery">
+            <div class="services__block services__block--delivery services__block--current">
               <h3 class="services__title title">Доставка</h3>
-              <p class="services__txt">Мы с удовольствием доставим ваш товар прямо к вашему
-                подъезду совершенно бесплатно! Ведь мы неплохо
-                заработаем, поднимая его на ваш этаж.</p>
+              <p class="services__txt">Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо к&nbsp;вашему
+                подъезду совершенно бесплатно! Ведь мы&nbsp;неплохо
+                заработаем, поднимая его на&nbsp;ваш этаж.</p>
             </div>
             <div class="services__block services__block--garanty">
               <h3 class="services__title title">Гарантия</h3>
-              <p class="services__txt">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте,
+              <p class="services__txt">Если из-за возгорания купленного у&nbsp;нас товара у&nbsp;вас сгорит
+                дом&nbsp;&mdash; не&nbsp;переживайте,
                 мы
-                выдадим вам новый. Товар, не дом, конечно же.</p>
+                выдадим вам новый. <br> Товар, не&nbsp;дом, конечно&nbsp;же.</p>
             </div>
             <div class="services__block services__block--credits">
               <h3 class="services__title title">Кредит</h3>
-              <p class="services__txt">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
-                наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+              <p class="services__txt">Залезть в&nbsp;долговую яму стало проще! Кредитные консультанты подберут для вас
+                наиболее выгодные <br> условия кредита. Выгодные для нашего банка, разумеется.</p>
             </div>
           </div>
         </div>
@@ -379,8 +360,7 @@
   <section class="write-us">
     <h2 class="visually-hidden">Напишите нам</h2>
 
-    <button class="write-us__btn" type="button" aria-label="Закрыть окно"><span
-        class="visually-hidden">Закрыть</span></button>
+    <button class="modal__btn" type="button" aria-label="Закрыть окно"></button>
     <div class="write-us__form-wrapper">
       <form class="write-us__form" action="https://echo.htmlacademy.ru/" method="POST">
         <div class="write-us__name-wrapper">
@@ -406,13 +386,14 @@
   <section class="map">
     <h2 class="visually-hidden">Карта</h2>
 
-    <div class="map__wrapper">
-      <button class="map__btn" type="button" aria-label="Закрыть окно"><span
-          class="visually-hidden">Закрыть</span></button>
+    <button class="modal__btn" type="button" aria-label="Закрыть окно"><span
+        class="visually-hidden">Закрыть</span></button>
 
-      <div class="map__img-wrapper">
-        <img src="img/map-big.png" width="994" height="593" alt="г. Москва, ул. Строителей, 15">
-      </div>
+    <div class="map__wrapper">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779985!2d37.52742931559216!3d55.6870309805358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sit!4v1591720021543!5m2!1sru!2sit"
+        width="960" height="560" allowfullscreen="" aria-hidden="false" tabindex="0"
+        title="Наш офис по адресу г. Москва, ул. Строителей, 15"></iframe>
     </div>
   </section>
 
