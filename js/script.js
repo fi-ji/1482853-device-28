@@ -164,26 +164,3 @@ servicesControls.forEach((btn) => {
 		servicesBlock[servicesControlsArr.indexOf(this)].classList.add('services__block--current');
 	});
 });
-
-// var servicesControls = document.querySelectorAll('.services__controls-btn');
-// var servicesBlock = document.querySelectorAll('.services__block');
-// var servicesControlsItem = document.querySelectorAll('.services__controls-item');
-// var servicesControlsArr = Array.from(servicesControls);
-
-// function removeClassServices() {
-// 	servicesControlsItem.forEach((item) => {
-// 		item.classList.remove('services__controls-item--active');
-// 	});
-// 	servicesBlock.forEach((item) => {
-// 		item.classList.remove('services__block--current');
-// 	});
-// }
-
-// servicesControlsArr.forEach((btn) => {
-// 	btn.addEventListener('click', function() {
-// 		removeClassServices();
-
-// 		servicesControlsItem[servicesControlsArr.indexOf(this)].classList.add('services__controls-item--active');
-// 		servicesBlock[servicesControlsArr.indexOf(this)].classList.add('services__block--current');
-// 	});
-// });
