@@ -43,14 +43,17 @@
 	--basic-grey-white-light: #f2f2f2;
 	--basic-white: #ffffff;
 
+	--white-alpha-7: rgba(255, 255, 255, 0.7);
 	--white-alpha-6: rgba(255, 255, 255, 0.6);
 	--white-alpha-3: rgba(255, 255, 255, 0.3);
 	--black-alpha-6: rgba(0, 0, 0, 0.6);
 	--black-alpha-4: rgba(0, 0, 0, 0.4);
 	--black-alpha-3: rgba(0, 0, 0, 0.3);
+	--black-alpha-2: rgba(0, 0, 0, 0.2);
 	--black-alpha-1: rgba(0, 0, 0, 0.1);
 
 	--special-yellow-dark: #f0c52e;
+	--special-yellow-darker: #ffc600;
 	--special-yellow: #f7e296;
 
 	--special-red-extra-light: #f6dada;
@@ -290,7 +293,7 @@ html {
 	height: 2px;
 
 	cursor: default;
-	animation: slide 0.4s;
+	animation: draw-line 0.2s ease-in-out;
 }
 
 .search:focus-within .search__btn {
@@ -1294,7 +1297,8 @@ html {
 }
 
 .footer-top__menu a {
-	opacity: 0.7;
+	position: relative;
+	color: var(--white-alpha-7);
 }
 
 .footer-top__list {
@@ -1312,10 +1316,6 @@ html {
 
 .footer-top__item {
 	padding-left: 24px;
-}
-
-.footer-top__item a {
-	position: relative;
 }
 
 .footer-top__item:not(.footer-top__item--exit) {
@@ -1369,7 +1369,12 @@ html {
 
 .footer-top__item a:hover,
 .footer-top__item a:focus {
-	opacity: 1;
+	color: var(--basic-white);
+}
+
+.footer-top__item a:hover::before,
+.footer-top__item a:focus::before {
+	opacity: 0.6;
 }
 
 .footer-center__item a:hover,
@@ -1379,7 +1384,7 @@ html {
 
 .footer-top__item a:active,
 .footer-center__item a:active {
-	color: var(--white-alpha-3);
+	opacity: 0.3;
 }
 
 .footer-center {
@@ -1417,7 +1422,7 @@ html {
 .footer-bottom::before {
 	content: "";
 
-	background-color: var(--special-yellow-dark);
+	background-color: var(--special-yellow-darker);
 
 	position: absolute;
 	top: 13px;
@@ -1632,7 +1637,7 @@ html {
 	background-color: var(--basic-grey-white-light);
 
 	width: 100%;
-	height: 167px;
+	min-height: 167px;
 	border: 0;
 	padding-top: 16px;
 	padding-left: 20px;
@@ -1972,7 +1977,7 @@ html {
 }
 
 .input-range__scale {
-	background-color: var(--black-alpha-3);
+	background-color: var(--black-alpha-2);
 
 	width: 200px;
 	height: 2px;
@@ -1989,11 +1994,12 @@ html {
 	background-color: var(--basic-half-grey);
 
 	position: absolute;
-	top: 0;
+	top: -1px;
 	left: 0;
 
 	width: 20px;
 	height: 20px;
+	padding: 0;
 	border: 8px solid var(--basic-white);
 	border-radius: 50%;
 
@@ -2568,5 +2574,14 @@ html {
 	}
 	100% {
 		transform: translateX(0);
+	}
+}
+
+@keyframes draw-line {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 438px;
 	}
 }
