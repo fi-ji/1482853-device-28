@@ -51,6 +51,8 @@
 	--black-alpha-3: rgba(0, 0, 0, 0.3);
 	--black-alpha-2: rgba(0, 0, 0, 0.2);
 	--black-alpha-1: rgba(0, 0, 0, 0.1);
+	--black-alpha-15: rgba(0, 0, 0, 0.15);
+	--black-alpha-18: rgba(0, 0, 0, 0.18);
 
 	--special-yellow-dark: #f0c52e;
 	--special-yellow-darker: #ffc600;
@@ -1526,7 +1528,7 @@ html {
 
 	width: 960px;
 
-	box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 10px 16px var(--black-alpha-15);
 }
 
 .write-us {
@@ -1990,7 +1992,7 @@ html {
 	border: 8px solid var(--basic-white);
 	border-radius: 50%;
 
-	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.18);
+	box-shadow: 0px 2px 2px var(--black-alpha-18);
 	cursor: pointer;
 }
 
